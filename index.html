@@ -1,0 +1,218 @@
+<?php
+$dbc = mysqli_connect('localhost','root', '', 'skillbox');
+date_default_timezone_set('Europe/Moscow');
+header('Content-type: text/html; charset=utf-8');
+if(isset($_POST['submit'])){
+	$name = mysqli_real_escape_string($dbc, trim($_POST['name']));
+	$phoneNumber = mysqli_real_escape_string($dbc, trim($_POST['call']));
+	$date = date('d.m.Y h:i:s');
+	if (!empty($name) && !empty($phoneNumber)) {
+		$query= "SELECT * FROM `recalls` WHERE date1time ='$date'";
+		$query = "SELECT * FROM `recalls` WHERE name = '$name'";
+		$query = "SELECT * FROM `recalls` WHERE callnumber = '$phoneNumber'";
+		$data = mysqli_query($dbc, $query);
+		if(mysqli_num_rows($data) == 0) {
+			$query = "INSERT INTO `recalls` (name, callnumber, date1time) VALUES ('$name', ('$phoneNumber'), ('$date'))";
+			mysqli_query($dbc, $query);
+			mysqli_close($dbc);
+			header("Refresh:0");
+			exit();
+		}
+	}
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Дмитрий Алексеев - Frontend-разработчик и веб-верстальщик!</title>
+	<link rel="stylesheet" href="fonts/Tahoma/tahoma.css">
+	<link rel="stylesheet" href="fonts/Tahoma-Bold/tahoma-bold.css">
+	<link rel="stylesheet" href="libs/bootstrap-reboot/bootstrap-reboot-min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script>
+	$(function(){
+		$('#top-recall').on('click', function(){
+			$('#popup-container').css('display', 'flex');
+			$('#human').css('visibility', 'hidden');
+			$('#button-human-block').css('visibility', 'hidden');
+		});
+
+		$('#popup-container').on('click', function(event){
+			if(event.target === this) {
+				$('#popup-container').css('display', 'none');
+				$('#human').css('visibility', 'visible');	
+				$('#button-human-block').css('visibility', 'visible');	
+			}
+		});
+		});
+	</script>
+	<script>
+	$(function(){
+		$('#footer-recall').on('click', function(){
+			$('#popup-container').css('display', 'flex');
+			$('#human').css('visibility', 'hidden');
+			$('#button-human-block').css('visibility', 'hidden');
+		});
+
+		$('#popup-container').on('click', function(event){
+			if(event.target === this) {
+				$('#popup-container').css('display', 'none');
+				$('#human').css('visibility', 'visible');	
+				$('#button-human-block').css('visibility', 'visible');		
+			}
+		});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#menu").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".footer-nav").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".text-human-block").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".button-tasks").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".examples-of-my-work").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+</head>
+<body>
+	<form action="" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+		<div id="popup-container">
+			<div id="recall-popup">
+				<h1>Форма заявки</h1>
+				<input type="text" name="name" value="" placeholder="Имя">
+				<input type="text" name="call" value="" placeholder="Телефон">
+				<button type="submit" name="submit">Отправить</button>
+			</div>
+		</div>
+	</form>	
+	<div class="bg-class">
+		<div id="layout">
+			<div id="header" class="centered">
+				<nav id="menu">
+					<a href="#ex1">Услуги</a>
+					<a href="#ex2">Портфолио</a>
+					<a href="#ex3" id="techic-padding">Стоимость</a>
+				</nav>
+				<div id="top-phone-container">
+					<a id="top-phone" href="tel:+74999955577">+7 (499) 995-55-77</a>
+					<button id="top-recall">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="text-human-block">
+				<h1>Дмитрий Алексеев</h1>
+				<h3>Frontend-разработчик и веб-верстальщик</h3>
+				<a href="#ex1"><button id="button-human-block">Узнать больше</button></a>
+			</div>
+			<div class="human-image-block">
+				<img src="img/human.jpg" alt="" id="human">			
+			</div>
+		</div>
+	</div>
+	<div class="bg-tasks-block">
+		<div class="tasks-block" id="ex1">
+			<h1>Что я делаю</h1>
+			<img src="img/tasks/1.png" alt="" id="pdtasks1">
+			<img src="img/tasks/2.png" alt="" id="pdtasks2">
+			<img src="img/tasks/3.png" alt="" id="pdtasks3">
+			<img src="img/tasks/4.png" alt="" id="pdtasks4">
+			<br>
+			<h6 id="pdtasks5">Вёрстка лендинг–страниц и сайтов любой сложности</h6>
+			<h6 id="pdtasks6">Адаптивная вёрстка под все браузеры и устройства</h6>
+			<h6 id="pdtasks7">Frontend–разработка и программирование</h6>
+			<h6 id="pdtasks8">Исправление и доработка существующей вёрстки</h6>
+			<div class="button-tasks"><a href="#ex3"><button>Узнать стоимость</button></a></div>
+		</div>
+	</div>
+	<div class="examples-bg" id="ex2">
+		<div class="examples-of-my-work">
+			<h1>Примеры моих работ</h1>
+			<img src="img/img-examples1.jpg" alt="">
+			<img src="img/img-examples2.jpg" alt="">
+			<img src="img/img-examples3.jpg" alt="">
+			<h6 id="mg-text-examlpes1">Сайт психолога Веры Антоновой</h6>
+			<h6 id="mg-text-examlpes2">Сайт магазина детской одежды</h6>
+			<h6 id="mg-text-examlpes3">Сайт магазина «Рыболов»</h6>
+			<a href="#ex3"><button id="button-examples">Заказать проект</button></a>
+		</div>	
+	</div>	
+	<div class="orange-block" id="ex3">
+		<h1>Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h1>
+		<h5>* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, в зависимости от сложности задач.</h5>
+	</div>
+	<div class="footer">
+		<div>
+			<ul class="footer-nav">
+				<a href="#ex1"><li>Услуги</li></a>
+				<a href="#ex2"><li>Портфолио</li></a>
+				<a href="#ex3"><li>Стоимость</li></a>	
+			</ul>
+		</div>	
+		<div class="feedback-footer">
+			<img src="img/tasks/call-answer1.png" alt=""><h1>+7 (499) 995-77-55</h1>
+			<br>
+			<br>
+			<img src="img/tasks/envelope1.png" alt=""><h1>dmitry@alekseev.com</h1>
+		</div>
+		<div class="socials-footer">
+			<button id="footer-recall">Заказать звонок</button>
+			<br><br>
+			<br><br>
+			<a href="#"><img src="img/tasks/vk.png" alt="" id="socials1"></a>			
+			<a href="#"><img src="img/tasks/facebook.png" alt="" id="socials2"></a>
+			<a href="#"><img src="img/tasks/twitter.png" alt="" id="socials3"></a>			
+			<a href="#"><img src="img/tasks/instagram.png" alt="" id="socials4"></a>
+		</div>	
+	</div>	
+	<div class="author">
+		<h5>© Александр Панкратов, 2016 – 2018</h5>
+		<br>
+	</div>
+</body>
+</html>
