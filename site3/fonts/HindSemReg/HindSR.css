@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'HindSR';
+  src: url('Hind-Semibold-Regular.ttf');
+  src: url('Hind-Semibold-Regular.ttf') format('truetype'), 
+  font-weight: 400;
+  font-style: normal;
+}

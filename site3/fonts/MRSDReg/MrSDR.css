@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'MrSDR';
+  src: url('MrsSaintDelafield-Regular.ttf');
+  src: url('MrsSaintDelafield-Regular.ttf') format('truetype'), 
+  font-weight: 400;
+  font-style: normal;
+}

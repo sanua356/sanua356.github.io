@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'OpenSansL';
+  src: url('OpenSans-Light.ttf');
+  src: url('OpenSans-Light.ttf') format('truetype'), 
+  font-weight: 400;
+  font-style: normal;
+}
