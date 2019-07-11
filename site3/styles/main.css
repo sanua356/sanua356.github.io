@@ -78,7 +78,8 @@ a:hover{
     position: absolute;
     width: 100%;
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     transition: background-position .2s .1s ease-out;
     background-size: 200% auto;
 }
@@ -813,9 +814,7 @@ a:hover{
 
 @media screen and (min-width:1px) and (max-width:992px){
 	.container-footer{
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
 		justify-content: center;
@@ -932,7 +931,6 @@ a:hover{
 	background-color: #F9F9FB;
 }
 .container-about-me{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -1082,7 +1080,6 @@ a:hover{
 .search{
 	text-align: center;
 	margin-top: 20px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -1104,6 +1101,38 @@ a:hover{
 	border: 1px solid rgba(221, 221, 221, 0.15);
 	padding-left:20px;
 	margin-left: 20px;	
+}
+.search input::-webkit-input-placeholder{
+	color: #212121;
+	font-family: Hind;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.search input::-moz-placeholder{
+	color: #212121;
+	font-family: Hind;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.search input:-ms-input-placeholder{
+	color: #212121;
+	font-family: Hind;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+.search input::-ms-input-placeholder{
+	color: #212121;
+	font-family: Hind;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }
 .search input::placeholder{
 	color: #212121;
@@ -1221,12 +1250,76 @@ a:hover{
 	height: 815px;
 	resize: none;
 }
+.inputs textarea::-webkit-input-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;/
+	letter-spacing: 0.84px;letter-spacing
+}
+.inputs textarea::-moz-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;/
+	letter-spacing: 0.84px;letter-spacing
+}
+.inputs textarea:-ms-input-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;/
+	letter-spacing: 0.84px;letter-spacing
+}
+.inputs textarea::-ms-input-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;/
+	letter-spacing: 0.84px;letter-spacing
+}
 .inputs textarea::placeholder{
 	color: #424242;
 	font-family: Hind;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;/
+	letter-spacing: 0.84px;letter-spacing
+}
+.inputs input::-webkit-input-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.84px;
+}
+.inputs input::-moz-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.84px;
+}
+.inputs input:-ms-input-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.84px;
+}
+.inputs input::-ms-input-placeholder{
+	color: #424242;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
 	letter-spacing: 0.84px;
 }
 .inputs input::placeholder{
@@ -1349,6 +1442,34 @@ a:hover{
 	height: 50px;
 	padding-left: 25px;
 }
+.input404 input::-webkit-input-placeholder{
+	color: #363636;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.17px;
+}
+.input404 input::-moz-placeholder{
+	color: #363636;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.17px;
+}
+.input404 input:-ms-input-placeholder{
+	color: #363636;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.17px;
+}
+.input404 input::-ms-input-placeholder{
+	color: #363636;
+	font-family: Hind;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.17px;
+}
 .input404 input::placeholder{
 	color: #363636;
 	font-family: Hind;
@@ -1428,7 +1549,6 @@ a:hover{
 .prev-next-post{
 	width: 100%;
 	height: 140px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -1463,7 +1583,8 @@ a:hover{
 	padding-top: 5%;
 }
 .next img{
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 .last-post{
 	height: 172px;
@@ -1561,7 +1682,8 @@ a:hover{
 	margin-right: 30px;
 }
 #reverse-rec-posts{
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 	padding-left: 10px;
 }
 .unv-font-rec-posts{
@@ -1574,7 +1696,6 @@ a:hover{
 }
 .rec-posts {
 	margin-top: 40px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -1592,7 +1713,6 @@ a:hover{
 	margin-left: 30px;
 }
 .container-df-post{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
