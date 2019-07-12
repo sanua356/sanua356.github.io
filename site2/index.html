@@ -12,24 +12,11 @@
 	<link rel="stylesheet" href="fonts/Sansation-Bold/Sansation-Bold.css">
 	<link rel="stylesheet" href="fonts/Sansation-Regular/Sansation-Regular.css">
 	<link rel="stylesheet" href="css/main.css">	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/main.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-	<script>
-		$(document).ready(function(){
-			$(".navigation").on("click","a", function (event) {
-		        event.preventDefault();
-		        var id  = $(this).attr('href'),
-		            top = $(id).offset().top;
-		        $('body,html').animate({scrollTop: top}, 1500);
-		    });
-		});
-	</script>
-	</script>
 	<div class="container" id="ex1 ex7">	
 		<nav class="navigation-container">
 			<a href="#" class="logo_and_socials_opacity">			
@@ -279,5 +266,17 @@
 		</div>
 	</div>
 </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".navigation").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
 </body>
 </html>
