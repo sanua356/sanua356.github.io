@@ -41,6 +41,9 @@ a:hover{
     z-index: 10;
 	text-transform: uppercase;
 	background-color: #212529;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 @media screen and (min-width:1px) and (max-width: 768px) {
 	.menu-wrap {
@@ -275,6 +278,8 @@ a:hover{
 .bg-header{
 	background-image: url(../img/bg/header-bg.jpg);	
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 	z-index: -1;
 	background-color: #F9F9FB;
 	width: 100%;
