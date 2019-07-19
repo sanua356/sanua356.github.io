@@ -9,92 +9,6 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Cache-Control" content="no-cache">
-	<script src="libs/jquery-3.4.1.min.js"></script>
-	<script>
-	$(function(){
-		$('#top-recall').on('click', function(){
-			$('#popup-container').css('display', 'flex');
-			$('#human').css('visibility', 'hidden');
-			$('#button-human-block').css('visibility', 'hidden');
-		});
-
-		$('#popup-container').on('click', function(event){
-			if(event.target === this) {
-				$('#popup-container').css('display', 'none');
-				$('#human').css('visibility', 'visible');	
-				$('#button-human-block').css('visibility', 'visible');	
-			}
-		});
-		});
-	</script>
-	<script>
-	$(function(){
-		$('#footer-recall').on('click', function(){
-			$('#popup-container').css('display', 'flex');
-			$('#human').css('visibility', 'hidden');
-			$('#button-human-block').css('visibility', 'hidden');
-		});
-
-		$('#popup-container').on('click', function(event){
-			if(event.target === this) {
-				$('#popup-container').css('display', 'none');
-				$('#human').css('visibility', 'visible');	
-				$('#button-human-block').css('visibility', 'visible');		
-			}
-		});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$("#menu").on("click","a", function (event) {
-		        event.preventDefault();
-		        var id  = $(this).attr('href'),
-		            top = $(id).offset().top;
-		        $('body,html').animate({scrollTop: top}, 1500);
-		    });
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$(".footer-nav").on("click","a", function (event) {
-		        event.preventDefault();
-		        var id  = $(this).attr('href'),
-		            top = $(id).offset().top;
-		        $('body,html').animate({scrollTop: top}, 1500);
-		    });
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$(".text-human-block").on("click","a", function (event) {
-		        event.preventDefault();
-		        var id  = $(this).attr('href'),
-		            top = $(id).offset().top;
-		        $('body,html').animate({scrollTop: top}, 1500);
-		    });
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$(".button-tasks").on("click","a", function (event) {
-		        event.preventDefault();
-		        var id  = $(this).attr('href'),
-		            top = $(id).offset().top;
-		        $('body,html').animate({scrollTop: top}, 1500);
-		    });
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$(".examples-of-my-work").on("click","a", function (event) {
-		        event.preventDefault();
-		        var id  = $(this).attr('href'),
-		            top = $(id).offset().top;
-		        $('body,html').animate({scrollTop: top}, 1500);
-		    });
-		});
-	</script>
 </head>
 <body>
 	<form action="" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -191,5 +105,90 @@
 		<h5>© Александр Панкратов, 2016 – 2018</h5>
 		<br>
 	</div>
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script>
+	$(function(){
+		$('#top-recall').on('click', function(){
+			$('#popup-container').css('display', 'flex');
+			$('#human').css('visibility', 'hidden');
+			$('#button-human-block').css('visibility', 'hidden');
+		});
+
+		$('#popup-container').on('click', function(event){
+			if(event.target === this) {
+				$('#popup-container').css('display', 'none');
+				$('#human').css('visibility', 'visible');	
+				$('#button-human-block').css('visibility', 'visible');	
+			}
+		});
+		});
+	</script>
+	<script>
+	$(function(){
+		$('#footer-recall').on('click', function(){
+			$('#popup-container').css('display', 'flex');
+			$('#human').css('visibility', 'hidden');
+			$('#button-human-block').css('visibility', 'hidden');
+		});
+
+		$('#popup-container').on('click', function(event){
+			if(event.target === this) {
+				$('#popup-container').css('display', 'none');
+				$('#human').css('visibility', 'visible');	
+				$('#button-human-block').css('visibility', 'visible');		
+			}
+		});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#menu").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".footer-nav").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".text-human-block").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".button-tasks").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".examples-of-my-work").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
+	</script>
 </body>
 </html>
