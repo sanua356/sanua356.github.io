@@ -342,6 +342,11 @@ nav{
 	font-weight: 100;
 	text-align: center;
 }
+@media screen and (max-width: 480px) {
+	.feat-text{
+		width: 300px;
+	}
+}
 @media screen and (min-width:481px) and (max-width: 768px) {
 	.feat-text{
 		width: 300px;
@@ -569,6 +574,11 @@ nav{
 	width: 70px;
 	height: 70px;
 }
+@media screen and (max-width: 480px) {
+	.edit img{
+		margin-bottom: 60px;
+	}
+}
 @media screen and (min-width:1px) and (max-width: 992px) {
 	.edit img{
 		margin-right: 0;
@@ -777,7 +787,7 @@ nav{
 .team-humans > *:last-child{
 	margin-right: 0px;
 }
-.team-human img{
+.team-human{
 	position: relative;
 }
 @media screen and (min-width:993px) and (max-width: 1201px) {
@@ -793,8 +803,6 @@ nav{
 	}
 }
 .team-human-name{
-	bottom: 0;
-	margin: auto;
 	color: #11749e;
 	font-family: GothamMedium;
 	font-size: 20px;
@@ -814,28 +822,12 @@ nav{
 }
 .brd-name-and-spec{
 	position: absolute;
-	background-color: #ffffff;
-	width: 215px;
-	margin-left: 3vh;
-	margin-top: -60px;
+	margin: auto;
+	left: 0; bottom: 0px; right: 0;
+	padding-bottom: 30px;
+ 	background-color: #ffffff;
 	border: 1px solid #ffffff;
-}
-@media screen and (min-width:481px) and (max-width: 768px) {
-	.brd-name-and-spec{
-		margin-left: 15vh;
-	}
-}
-@media screen and (min-width:769px) and (max-width: 992px) {
-	.brd-name-and-spec{
-		margin-left: 27vh;
-	}
-}
-@media screen and (min-width:481px) and (max-width: 1201px) {
-	.brd-name-and-spec{
-		margin-left: 2vh;
-		margin-top: -60px;
-		border: 1px solid #ffffff;
-	}
+	width: 215px;
 }
 /*///////////////////////////////////////////////////////////////////////footer///////////////////////////////////////////////*/
 .footer-bg{
