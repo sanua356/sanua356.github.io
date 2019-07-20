@@ -26,7 +26,6 @@ a{
 .nvpbg{
 	background-image: url(../img/bg/fon.jpg);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 #logo{
@@ -88,7 +87,6 @@ nav{
 	margin-bottom: 40px;
 }
 .menu ul{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -154,7 +152,6 @@ nav{
 		}
 	}
 .social-icons{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -361,7 +358,6 @@ nav{
 }
 /*///////////////////////////////////////////////////////d-flex-class///////////////////////////////////////////////////////*/
 .d-flex{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -381,7 +377,6 @@ nav{
 	background-color: #f3f3f3;
 }
 .jobs-bg{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -618,7 +613,6 @@ nav{
 .phone-bg{
 	background-image: url(../img/phone/bg_phone.jpg);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 .phone-block{
@@ -833,7 +827,6 @@ nav{
 .footer-bg{
 	background-image: url(../img/bg/footer-bg.jpg);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 .footer h4{
@@ -881,6 +874,34 @@ nav{
 		width: 80%;
 	}
 }
+.txta-footer::-webkit-input-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;	
+}
+.txta-footer::-moz-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;	
+}
+.txta-footer:-ms-input-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;	
+}
+.txta-footer::-ms-input-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;	
+}
 .txta-footer::placeholder{
 	color: #ffffff;
 	font-family: "GothamBook";
@@ -889,6 +910,18 @@ nav{
 	letter-spacing: 0.3px;	
 }
 @media screen and (min-width:769px) and (max-width: 992px) {
+	.txta-footer::-webkit-input-placeholder{
+		font-size: 25px;
+	}
+	.txta-footer::-moz-placeholder{
+		font-size: 25px;
+	}
+	.txta-footer:-ms-input-placeholder{
+		font-size: 25px;
+	}
+	.txta-footer::-ms-input-placeholder{
+		font-size: 25px;
+	}
 	.txta-footer::placeholder{
 		font-size: 25px;
 	}
@@ -909,6 +942,34 @@ nav{
 		margin-bottom: 40px;
 	}
 }
+.inputs-footer input::-webkit-input-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;
+}
+.inputs-footer input::-moz-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;
+}
+.inputs-footer input:-ms-input-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;
+}
+.inputs-footer input::-ms-input-placeholder{
+	color: #ffffff;
+	font-family: "GothamBook";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.3px;
+}
 .inputs-footer input::placeholder{
 	color: #ffffff;
 	font-family: "GothamBook";
@@ -917,13 +978,24 @@ nav{
 	letter-spacing: 0.3px;
 }
 @media screen and (min-width:769px) and (max-width: 992px) {
+	.inputs-footer input::-webkit-input-placeholder{
+		font-size: 25px;
+	}
+	.inputs-footer input::-moz-placeholder{
+		font-size: 25px;
+	}
+	.inputs-footer input:-ms-input-placeholder{
+		font-size: 25px;
+	}
+	.inputs-footer input::-ms-input-placeholder{
+		font-size: 25px;
+	}
 	.inputs-footer input::placeholder{
 		font-size: 25px;
 	}
 }
 @media screen and (min-width:1px) and (max-width: 992px) {
 	.inputs-footer{
-		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;

@@ -42,7 +42,6 @@ a:hover{
 	text-transform: uppercase;
 	background-color: #212529;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 @media screen and (min-width:1px) and (max-width: 768px) {
@@ -278,7 +277,6 @@ a:hover{
 .bg-header{
 	background-image: url(../img/bg/header-bg.jpg);	
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	z-index: -1;
 	background-color: #F9F9FB;
@@ -1261,7 +1259,7 @@ a:hover{
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;/
-	letter-spacing: 0.84px;letter-spacing
+	letter-spacing: 0.84px;letter-spacingletter-spacing
 }
 .inputs textarea::-moz-placeholder{
 	color: #424242;
@@ -1269,7 +1267,7 @@ a:hover{
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;/
-	letter-spacing: 0.84px;letter-spacing
+	letter-spacing: 0.84px;letter-spacingletter-spacing
 }
 .inputs textarea:-ms-input-placeholder{
 	color: #424242;
@@ -1277,7 +1275,7 @@ a:hover{
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;/
-	letter-spacing: 0.84px;letter-spacing
+	letter-spacing: 0.84px;letter-spacingletter-spacing
 }
 .inputs textarea::-ms-input-placeholder{
 	color: #424242;
@@ -1285,7 +1283,7 @@ a:hover{
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;/
-	letter-spacing: 0.84px;letter-spacing
+	letter-spacing: 0.84px;letter-spacingletter-spacing
 }
 .inputs textarea::placeholder{
 	color: #424242;
@@ -1293,7 +1291,7 @@ a:hover{
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;/
-	letter-spacing: 0.84px;letter-spacing
+	letter-spacing: 0.84px;letter-spacingletter-spacing
 }
 .inputs input::-webkit-input-placeholder{
 	color: #424242;
