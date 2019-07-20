@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'GothamBold';
+  src: url('GothamBold.ttf');
+  src: url('GothamBold.ttf') format('truetype'), 
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('GothamMedium.ttf');
+  src: url('GothamMedium.ttf') format('truetype'), 
+  font-weight: normal;
+  font-style: normal;
+}
