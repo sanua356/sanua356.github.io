@@ -1,0 +1,9 @@
+@font-face {
+font-family: 'ArialB';
+src: url('Arial-BoldMT.eot');
+src: url('Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+url('Arial-BoldMT.woff') format('woff'),
+url('Arial-BoldMT.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
