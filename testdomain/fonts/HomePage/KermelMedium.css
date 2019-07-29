@@ -1,8 +1,0 @@
-@font-face {
-			font-family: "KermelMedium";
-			src: url("../HomePage/Kermel-medium.otf");
-			src: url("../HomePage/Kermel-medium.otf?#iefix")format("embedded-opentype"),
-			url("../HomePage/Kermel-medium.otf") format("opentype");
-			font-style: normal;
-			font-weight: normal;
-	}
