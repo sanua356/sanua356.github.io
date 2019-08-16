@@ -1,0 +1,23 @@
+<?php
+$dbc = mysqli_connect('localhost','root', '', 'incubator');
+date_default_timezone_set('Europe/Moscow');
+header('Content-type: text/html; charset=utf-8');
+if(isset($_POST['submit'])){
+	$name = mysqli_real_escape_string($dbc, trim($_POST['name']));
+	$comment = mysqli_real_escape_string($dbc, trim($_POST['comment']));
+	$date = date('d.m.Y h:i:s');
+	if (!empty($name) && !empty($comment)) {
+		$query= "SELECT * FROM `but_comanda` WHERE date1time ='$date'";
+		$query = "SELECT * FROM `but_comanda` WHERE name = '$name'";
+		$data = mysqli_query($dbc, $query);
+		if(mysqli_num_rows($data) == 0) {
+			$query = "INSERT INTO `but_comanda` (name, comment, date1time) VALUES ('$name', ('$comment'), ('$date'))";
+			mysqli_query($dbc, $query);
+			mysqli_close($dbc);
+			header("Refresh:0");
+			exit();
+		}
+	}
+}
+?>
+<?php echo $_SERVER['PHP_SELF'];?>

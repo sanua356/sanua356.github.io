@@ -1,0 +1,18 @@
+a{	
+	text-decoration: none;
+	list-style-type:none;
+	color:white;
+}
+a:visited {
+	color: white; /* Цвет посещенных ссылок */
+}
+a:active {
+    color: white; /* Цвет активных ссылок */
+}
+a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+li{
+	list-style-type:none;
+}
