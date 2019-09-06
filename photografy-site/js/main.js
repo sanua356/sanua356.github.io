@@ -22,6 +22,22 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 });
+$(document).ready(function(){
+    $(".scroll-down-header").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+$(document).ready(function(){
+    $(".scroll-down-footer").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 $(document).ready(function() {
   	AOS.init()
 	AOS.init({
