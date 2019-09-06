@@ -1,11 +1,15 @@
 $(document).ready(function() {
-	$('.grid').masonry({
-		itemSelector:'.grid-item',
-		columnWidth: 10,
-		gutter: 30,
-		percentPosition: true,
+	var $container = $(".grid");
+		$container.imagesLoaded(function () {
+    	$container.masonry({
+      	    itemSelector:'.grid-item',
+			columnWidth: 10,
+			gutter: 30,
+			percentPosition: true,
+    	});
 	});
 });
+
 $(document).ready(function() {
 	$('.footer-galery').masonry({
 		itemSelector:'.footer-galery-item',
