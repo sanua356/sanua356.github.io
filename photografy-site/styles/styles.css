@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6{
 	width: 1170px;
 	margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+	.container {
+		width: 100%;	
+	}
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -41,6 +46,18 @@ header nav{
 	padding-top: 80px;
 	margin-bottom: 270px;
 }
+@media screen and (max-width: 480px) {
+	header nav{
+		padding-top: 30px;
+		margin-bottom: 50px;
+	}
+}
+@media screen and (max-width: 480px) {
+	header nav ul{
+		padding-left: 0px;
+		margin: 0 auto;
+	}
+}
 header nav ul li{
 	transition: 0.2s ease-in-out;
 	display: inline-block;
@@ -49,6 +66,12 @@ header nav ul li{
 	font-size: 14px;
 	font-weight: 600;
 }
+@media screen and (max-width: 480px) {
+	header nav ul li{
+		margin-top: 30px;
+		margin-right: 10px;
+	}
+}
 header nav ul li:hover{
 	transition: 0.2s ease-in-out;
 	padding-bottom: 7px;
@@ -56,6 +79,11 @@ header nav ul li:hover{
 }
 .logo{
 	max-width: 190px;
+}
+@media screen and (max-width: 480px) {
+	.logo{
+		margin: 0 auto;
+	}
 }
 .logo img{
 	float: left;
@@ -69,6 +97,11 @@ header nav ul li:hover{
 	line-height: 32px;
 	text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+	.name-and-desc-header{
+		text-align: center;
+	}
+}
 .name-and-desc-header h1{
 	font-family: "Muli" sans-serif;
 	font-size: 20px;
@@ -76,11 +109,24 @@ header nav ul li:hover{
 	letter-spacing: 0.1px;
 	margin-bottom: 50px;
 }
+@media screen and (max-width: 480px) {
+	.name-and-desc-header h1{
+		padding: 0px 20px;
+		font-size: 16px;
+	}
+}
 .name-and-desc-header h2{
 	max-width: 445px;
 	font-size: 60px;
 	font-weight: 300;
 	margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+	.name-and-desc-header h2{
+		padding: 0px 20px;
+		font-size: 22px;
+		font-weight: 900;
+	}
 }
 .name-and-desc-header button{
 	transition: 0.2s ease-in-out;
@@ -92,6 +138,11 @@ header nav ul li:hover{
 	padding: 20px 55px;
 	border-radius: 50px;
 	margin-bottom: 165px;
+}
+@media screen and (max-width: 480px) {
+	.name-and-desc-header button{
+		margin-bottom: 50px;
+	}
 }
 .name-and-desc-header button:hover{
 	color:  #ffffff;
@@ -112,6 +163,13 @@ header nav ul li:hover{
 	margin-right: -115px;
 	padding-bottom: 35px;
 }
+@media screen and (max-width: 480px) {
+	.social-icons-header {
+		padding-top: 50px;
+		justify-content: center;
+		margin-right: 0px;
+	}
+}
 /*////////////////////////////////////////////////////header-end//////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////about-me//////////////////////////////////////////////////////*/
 .about-me-bg{
@@ -125,6 +183,17 @@ header nav ul li:hover{
 	padding: 100px 0px;
 	width: 1385px;
 }
+@media screen and (max-width: 480px) {
+	.about-me-container{
+		display: block;
+	}
+}
+@media screen and (max-width: 480px) {
+	.about-me-container{
+		width: 100%;
+		padding: 50px 0px;
+	}
+}
 @media screen and (min-width:2100px) and (max-width: 2600px) {
 	.about-me-container{
 		margin: 0 auto;
@@ -134,6 +203,17 @@ header nav ul li:hover{
 	margin-right: 135px;
 	max-width: 100%;
 	height: auto;
+}
+@media screen and (max-width: 480px) {
+	.main-photo-block> *{
+		margin-right: 0px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.description-block-about-me {
+		padding: 0px 10px;
+		text-align: center;
+	}
 }
 .description-block-about-me h3, h4{
 	color: #2b2d5c;
@@ -149,6 +229,11 @@ header nav ul li:hover{
 	font-family: "Muli" sans-serif;
 	font-size: 26px;
 	margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+	.description-block-about-me h4{
+		margin-bottom: 0;
+	}
 }
 .description-block-about-me p{
 	max-width: 730px;
@@ -178,12 +263,23 @@ header nav ul li:hover{
 	display: flex;
 	justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+	.themes-about-me{
+		display: block;
+		padding: 20px 0px;
+	}
+}
 .theme-about-me h5{
 	color: #595666;
 	font-family: "Muli";
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+	.theme-about-me h5{
+		padding-top: 40px;
+	}
 }
 /*///////////////////////////////////////////////////about-me-end//////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////happy-clients//////////////////////////////////////////////////////*/
@@ -211,6 +307,20 @@ header nav ul li:hover{
 	-ms-align-items: center;
 	align-items: center;
 }
+@media screen and (max-width: 480px) {
+	.happy-clients-logos{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 480px) {
+	.happy-clients-logos img{
+		padding-top: 40px;
+	}
+}
 /*///////////////////////////////////////////////////happy-clients-end//////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////portfolio//////////////////////////////////////////////////////*/
 .portfolio-container{
@@ -221,6 +331,12 @@ header nav ul li:hover{
 	max-width: 1600px;
 	padding-top: 100px;
 	padding-bottom: 150px;
+}
+@media screen and (max-width: 480px) {
+	.portfolio-container{
+		display: block;
+		padding: 50px 0px;
+	}
 }
 @media screen and (min-width:2100px) and (max-width: 2600px) {
 	.portfolio-container{
@@ -234,6 +350,13 @@ header nav ul li:hover{
 	padding-bottom: 270px;
 	padding-left: 50px;
 	margin-right: 30px;
+}
+@media screen and (max-width: 480px) {
+	.portfolio-description-block{
+		width: 100%;
+		padding: 100px 20px;
+		margin-right: 0;
+	}
 }
 .portfolio-description-block h4{
 	color: #2b2d5c;
@@ -250,6 +373,11 @@ header nav ul li:hover{
 	padding-bottom: 35px;
 	margin: 0;
 }
+@media screen and (max-width: 480px) {
+	.portfolio-description-block p{
+		width: 100%;
+	}
+}
 .portfolio-description-block a{
 	opacity: 0.9;
 	color: #2b2d5c;
@@ -258,6 +386,11 @@ header nav ul li:hover{
 }
 .portfolio-galery-block{
 	width: 1065px;
+}
+@media screen and (max-width: 480px) {
+	.portfolio-galery-block{
+		width: 100%;
+	}
 }
 .portfolio-galery-block img{
 	max-width: 100%;
@@ -302,9 +435,20 @@ header nav ul li:hover{
  	justify-content: space-between;
  	align-items: flex-start; 
 }
+@media screen and (max-width: 480px) {
+	.blog-posts-container{
+		width: 100%;
+	}
+}
 .blog-posts-name-and-desc{
 	width: 470px;
 	margin-bottom: 80px;
+}
+@media screen and (max-width: 480px) {
+	.blog-posts-name-and-desc{
+		width: 100%;
+		order: -5;
+	}
 }
 .blog-posts-name{
 	color: #2b2d5c;
@@ -325,6 +469,17 @@ header nav ul li:hover{
 	max-width: 450px;
 	background-color: #ffffff;
 	border: 1px solid #ffffff;
+}
+@media screen and (max-width: 480px) {
+	.blog-post {
+		padding-bottom: 50px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.blog-post img{
+		max-width: 100%;
+		height: auto;
+	}
 }
 .blog-post:hover{
 	transition: 0.2s ease-in-out;
@@ -384,6 +539,11 @@ header nav ul li:hover{
 	margin: 0 auto;
 	position: relative;
 }
+@media screen and (max-width: 480px) {
+	.lets-work-and-footer-container{
+		width: 100%;
+	}
+}
 .lets-work-form{
 	text-align: center;
 }
@@ -401,6 +561,11 @@ header nav ul li:hover{
 	margin-bottom: 25px;
 	padding-left: 25px;
 }
+@media screen and (max-width: 480px) {
+	.lets-work-form input{
+		width: 95%;
+	}
+}
 .lets-work-form textarea{
 	color: #ffffff;
 	opacity: 0.65;
@@ -408,6 +573,11 @@ header nav ul li:hover{
 	height: 90px;
 	padding-left: 25px;
 	padding-top: 20px;
+}
+@media screen and (max-width: 480px) {
+	.lets-work-form textarea{
+		width: 95%;
+	}
 }
 .lets-work-form > button{
 	transition: 0.2s ease-in-out;
@@ -532,8 +702,29 @@ footer > p {
 	display: flex;
 	justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+	.footer-container{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 480px) {
+	.footer-container > div{
+		padding-top: 70px;
+	}
+}
 .contact-me-footer{
 	max-width: 200px;
+}
+@media screen and (max-width: 480px) {
+	.contact-me-footer{
+		max-width: 100%;
+		text-align: center;
+	}
 }
 #contact-us-footer > *{
 	text-align: left;
@@ -611,6 +802,13 @@ footer > p {
 }
 .instagramm-update{
 	max-width: 200px;
+}
+@media screen and (max-width: 480px) {
+	.instagramm-update{
+		padding-left: 10px;
+		max-width: 100%;
+		text-align: center;
+	}
 }
 .footer-galery-item{
 	margin-bottom: 10px;
