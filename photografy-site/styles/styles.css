@@ -19,11 +19,9 @@ h1, h2, h3, h4, h5, h6{
 	font-family: "Trirong";
 	color: #ffffff
 }
-@media screen and (min-width:1px) and (max-width: 1201px) {
-	section, header, footer > *{
-		overflow: hidden;
+section, header, footer > *{
+	overflow: hidden;
 	}
-}
 .container{
 	width: 1170px;
 	margin: 0 auto;
