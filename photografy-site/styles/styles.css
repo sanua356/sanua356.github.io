@@ -44,22 +44,22 @@ header{
 }
 @media screen and (max-width: 480px) {
 	header{
-		background-image: url(../img/header/bg480.jpg);
+		background-image: url(..//img/header/bg480.jpg);
 	}
 }
 @media screen and (min-width:481px) and (max-width: 768px) {
 	header{
-		background-image: url(../img/header/bg768.jpg);
+		background-image: url(..//img/header/bg768.jpg);
 	}
 }
 @media screen and (min-width:769px) and (max-width: 992px) {
 	header{
-		background-image: url(../img/header/bg992.jpg);
+		background-image: url(..//img/header/bg992.jpg);
 	}
 }
 @media screen and (min-width:993px) and (max-width: 1201px) {
 	header{
-		background-image: url(../img/header/bg1100.jpg);
+		background-image: url(..//img/header/bg1100.jpg);
 	}
 }
 header nav{
