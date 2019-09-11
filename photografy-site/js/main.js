@@ -9,15 +9,18 @@ $(document).ready(function() {
     	});
 	});
 });
-
 $(document).ready(function() {
-	$('.footer-galery').masonry({
-		itemSelector:'.footer-galery-item',
-		columnWidth:1,
-		gutter: 5,
-		percentPosition: true,
+	var $container = $(".footer-galery");
+		$container.imagesLoaded(function () {
+    	$container.masonry({
+      	    itemSelector:'.footer-galery-item',
+			columnWidth: 1,
+			gutter: 5,
+			percentPosition: true,
+    	});
 	});
 });
+
 $(document).ready(function(){
 	$("#scroll-effect-js").on("click","a", function (event) {
 	    event.preventDefault();
