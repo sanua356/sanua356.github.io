@@ -257,7 +257,7 @@ header nav ul li:hover{
 		margin-right: 0px;
 	}
 }
-@media screen and (min-width:769px) and (max-width: 992px) {
+@media screen and (min-width:481px) and (max-width: 992px) {
 	.main-photo-block{
 		text-align: center;
 	}
