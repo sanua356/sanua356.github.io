@@ -44,22 +44,22 @@ header{
 }
 @media screen and (max-width: 480px) {
 	header{
-		background-image: url(..//img/header/bg480.jpg);
+		background-image: url(../img/header/bg480.jpg);
 	}
 }
 @media screen and (min-width:481px) and (max-width: 768px) {
 	header{
-		background-image: url(..//img/header/bg768.jpg);
+		background-image: url(../img/header/bg768.jpg);
 	}
 }
 @media screen and (min-width:769px) and (max-width: 992px) {
 	header{
-		background-image: url(..//img/header/bg992.jpg);
+		background-image: url(../img/header/bg992.jpg);
 	}
 }
 @media screen and (min-width:993px) and (max-width: 1201px) {
 	header{
-		background-image: url(..//img/header/bg1100.jpg);
+		background-image: url(../img/header/bg1100.jpg);
 	}
 }
 header nav{
@@ -787,7 +787,7 @@ footer > p {
 	display: flex;
 	justify-content: space-between;
 }
-@media screen and (min-width:1px) and (max-width: 992px) {
+@media screen and (min-width:1px) and (max-width: 767px) {
 	.footer-container{
 		-moz-flex-direction: column;
 		-o-flex-direction: column;
@@ -804,15 +804,29 @@ footer > p {
 		padding: 0px 20px;
 	}
 }
+@media screen and (min-width:768px) and (max-width: 992px) {
+	.footer-container{
+		width: 100%;
+		height: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
 @media screen and (min-width:1px) and (max-width: 992px) {
 	.footer-container > div{
 		padding-top: 70px;
 	}
 }
+@media screen and (min-width:769px) and (max-width: 992px) {
+	.footer-container > div{
+		flex: 50%;
+	}
+}
 .contact-me-footer{
 	max-width: 200px;
 }
-@media screen and (min-width:1px) and (max-width: 992px) {
+@media screen and (min-width:1px) and (max-width: 768px) {
 	.contact-me-footer{
 		max-width: 100%;
 		text-align: center;
@@ -852,7 +866,7 @@ footer > p {
 .latest-blog-posts{
 	max-width: 365px;
 }
-@media screen and (min-width:481px) and (max-width: 992px) {
+@media screen and (min-width:481px) and (max-width: 768px) {
 	.latest-blog-posts{
 		margin: 0 auto;
 		width: 100%;
@@ -901,7 +915,8 @@ footer > p {
 .instagramm-update{
 	max-width: 200px;
 }
-@media screen and (min-width:1px) and (max-width: 992px) {
+
+@media screen and (min-width:1px) and (max-width: 768px) {
 	.instagramm-update{
 		padding-left: 10px;
 		max-width: 100%;
