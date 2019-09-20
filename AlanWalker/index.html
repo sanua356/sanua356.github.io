@@ -5,33 +5,35 @@
 	<title>Alan Walker fan concept site</title>
 	<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,900&display=swap" rel="stylesheet">	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="libs/bootstrap-reboot.css">
 	<link rel="stylesheet" href="styles/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="container" id="ex1">
 			<nav>
-				<div class="logo">
+				<div class="logo" data-aos="fade-right">
 					<span><i class="fas fa-compact-disc"></i>Alan Walker</span>
 				</div>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Tracks</a></li>
-					<li><a href="#">Tours</a></li>
-					<li><a href="#">Contact me</a></li>
+				<ul id="scroll-effect-js" data-aos="fade-left">
+					<li><a href="#ex1">Home</a></li>
+					<li><a href="#ex2">About me</a></li>
+					<li><a href="#ex3">Tracks</a></li>
+					<li><a href="#ex4">Tours</a></li>
+					<li><a href="#ex5">Contact me</a></li>
 				</ul>
 			</nav>
 			<div class="photo-and-desc-head-screen">
 				<img src="img/Head-screen/logo-white.png" alt="Задний фон Логотип" id="logo-bg">
 				<div class="description-block">
-					<h1 class="heading">Alan Walker</h1>
-					<p>Is a British-born Norwegian DJ and record producer. He is best known for his 2015 single "Faded" which received diamond certifications in Germany and Poland and multi-platinum certifications in over 10 countries including the US and the UK. He released his debut studio album, Different World, in 2018. He was ranked 36th on DJ Mag's Top 100 DJs list of 2018.</p>
-					<button>Listen to musik</button>
+					<h1 class="heading" data-aos="fade-right">Alan Walker</h1>
+					<p data-aos="fade-right">Is a British-born Norwegian DJ and record producer. He is best known for his 2015 single "Faded" which received diamond certifications in Germany and Poland and multi-platinum certifications in over 10 countries including the US and the UK. He released his debut studio album, Different World, in 2018. He was ranked 36th on DJ Mag's Top 100 DJs list of 2018.</p>
+					<button data-aos="fade-right">Listen to musik</button>
 				</div>
-				<div class="photo-block">
+				<div class="photo-block" data-aos="fade-left">
 					<img src="img/Head-screen/head-photo.png" alt="Алан Уокер главное фото">
 				</div>
 			</div>	
@@ -39,14 +41,14 @@
 	</header>
 	<section>
 		<div class="about-me-and-tracks-container">
-			<h3 class="heading-blocks">About me</h3>
+			<h3 class="heading-blocks" id="ex2" data-aos="fade-up">About me</h3>
 			<div class="photo-and-desc-about-me">
-				<div class="about-me-photo">
+				<div class="about-me-photo" data-aos="fade-right">
 					<img src="img/About Me/About-me-photo.png" alt="Фото для блока обо мне">
 				</div>
 				<div class="about-me-desc">
-					<h3>My Life</h3>
-					<p>British-born Norwegian DJ and record producer.
+					<h3 data-aos="fade-left">My Life</h3>
+					<p data-aos="fade-left">British-born Norwegian DJ and record producer.
 						<br/><br/>
 						 At the age of two, moved to Bergen, Norway, 
 						with his parents and siblings. Grew up with two 
@@ -61,7 +63,7 @@
 						slowly began publishing his music on YouTube 
 						and SoundCloud.
 					</p>
-					<span><a href="#"><i class="fas fa-angle-left"></i></a> 1 / 3 <a href="#"><i class="fas fa-angle-right"></i></a></span>
+					<span data-aos="fade-left"><a href="#"><i class="fas fa-angle-left"></i></a> 1 / 3 <a href="#"><i class="fas fa-angle-right"></i></a></span>
 				</div>
 			</div>
 		</div>
@@ -70,9 +72,9 @@
 		<div class="tracks-bg">
 			<img src="img/tracks/tracks-bg.png" alt="Задний фон треки">
 			<div class="about-me-and-tracks-container">
-				<h3 class="heading-blocks">Tracks</h3>
+				<h3 class="heading-blocks" id="ex3" data-aos="fade-up">Tracks</h3>
 				<div class="flex-tracks">
-					<div class="track">
+					<div class="track" data-aos="fade-down">
 						<div class="nav-track play-pause-btn">
 							<i class="fas fa-play" onclick="play_aud()"></i>
 							<i class="fas fa-pause" onclick="pause_aud()"></i>
@@ -95,7 +97,7 @@
 							<i class="fas fa-star"></i>
 						</div>
 					</div>
-					<div class="track">
+					<div class="track" data-aos="fade-down">
 						<div class="nav-track play-pause-btn">
 							<i class="fas fa-play" onclick="play_aud2()"></i>
 							<i class="fas fa-pause" onclick="pause_aud2()"></i>
@@ -118,7 +120,7 @@
 							<i class="fas fa-star"></i>
 						</div>
 					</div>
-					<div class="track">
+					<div class="track" data-aos="fade-right">
 						<div class="nav-track play-pause-btn">
 							<i class="fas fa-play" onclick="play_aud3()"></i>
 							<i class="fas fa-pause" onclick="pause_aud3()"></i>
@@ -141,7 +143,7 @@
 							<i class="fas fa-star"></i>
 						</div>
 					</div>
-					<div class="track">
+					<div class="track" data-aos="fade-left">
 						<div class="nav-track play-pause-btn">
 							<i class="fas fa-play" onclick="play_aud4()"></i>
 							<i class="fas fa-pause" onclick="pause_aud4()"></i>
@@ -164,7 +166,7 @@
 							<i class="fas fa-star"></i>
 						</div>
 					</div>
-					<div class="track">
+					<div class="track" data-aos="fade-up">
 						<div class="nav-track play-pause-btn">
 							<i class="fas fa-play" onclick="play_aud5()"></i>
 							<i class="fas fa-pause" onclick="pause_aud5()"></i>
@@ -187,7 +189,7 @@
 							<i class="fas fa-star"></i>
 						</div>
 					</div>
-					<div class="track">
+					<div class="track" data-aos="fade-up">
 						<div class="nav-track play-pause-btn">
 							<i class="fas fa-play"  onclick="play_aud6()"></i>
 							<i class="fas fa-pause" onclick="pause_aud6()"></i>
@@ -211,7 +213,7 @@
 						</div>
 					</div>
 				</div>	
-				<h5 id="more-tracks-youtube">More tracks on my <a href="https://www.youtube.com/user/DjWalkzz"><u>YouTube</u></a> channel</h5>
+				<h5 id="more-tracks-youtube" data-aos="fade-up">More tracks on my <a href="https://www.youtube.com/user/DjWalkzz"><u>YouTube</u></a> channel</h5>
 			</div>	
 		</div>	
 	</section>
@@ -219,29 +221,29 @@
 		<div class="tours-bg">
 			<img src="img/Tours/tours-bg.png" alt="Купит билет задний фон">
 			<div class="tours-and-contact-me-container">
-				<h3 class="heading-blocks">Tours</h3>
-				<div class="tour">
+				<h3 class="heading-blocks" id="ex4" data-aos="fade-up">Tours</h3>
+				<div class="tour" data-aos="fade-up">
 					<span>27.10</span>
 					<p>Alan Walker: Aviation Tour Chengdu (China)</p>
 					<button type="button">Buy ticket</button>
 				</div>
-				<div class="tour">
+				<div class="tour" data-aos="fade-up">
 					<span>29.10</span>
 					<p>Alan Walker: Aviation Tour Pudong Xinqu (China)</p>
 					<button type="button">Buy ticket</button>
 				</div>
-				<div class="tour">
+				<div class="tour" data-aos="fade-up">
 					<span>02.11</span>
 					<p>Alan Walker: Aviation TourFoshan (China)</p>
 					<button type="button">Buy ticket</button>
 				</div>
-				<div class="tour">
+				<div class="tour" data-aos="fade-up">
 					<span>07.11</span>
 					<p>Oslo Spektrum Grünerløkka (Norway)</p>
 					<button type="button">Buy ticket</button>
 				</div>
 				<a href="#">
-					<h5 id="view-all-tours">
+					<h5 id="view-all-tours" data-aos="fade-up">
 						View All tours  <i class="fas fa-angle-double-down"></i>
 					</h5>
 				</a>
@@ -252,18 +254,18 @@
 		<div class="contact-me-bg">
 			<img src="img/contact-me/contact-me-bg.png" alt="Связаться со мной задний фон">
 			<div class="tours-and-contact-me-container">
-				<h3 class="heading-blocks">Contact me</h3>
+				<h3 class="heading-blocks" id="ex5" data-aos="fade-up">Contact me</h3>
 				<form action="form.php" class="contact-me-form">
-					<input type="text" placeholder="Your Name">
-					<input type="text" placeholder="Your Email">
-					<textarea name="message" placeholder="Your Message"></textarea>
+					<input type="text" placeholder="Your Name" data-aos="fade-up">
+					<input type="text" placeholder="Your Email" data-aos="fade-up">
+					<textarea name="message" placeholder="Your Message" data-aos="fade-up"></textarea>
 					<div class="social-icons-contact-me">
-						<span>
+						<span data-aos="fade-right">
 							<a href="https://vk.com/alanwalker" target="_blank"><i class="fab fa-vk"></i></a>
 							<a href="https://ru-ru.facebook.com/alanwalkermusic" target="_blank"><i class="fab fa-facebook-f"></i></a>
 						</span>
-						<button type="button">Send Message</button>
-						<span>
+						<button type="button" data-aos="fade-up">Send Message</button>
+						<span data-aos="fade-left">
 							<a href="https://www.instagram.com/alanwalkermusic/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
 							<a href="https://soundcloud.com/alanwalker" target="_blank"><i class="fab fa-soundcloud"></i></a>
 						</span>
@@ -280,6 +282,7 @@
 		</h6>
 	</footer>
 	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

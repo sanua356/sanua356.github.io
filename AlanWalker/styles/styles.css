@@ -24,6 +24,7 @@ a:hover{
 }
 header, section, footer{
 	background-color: #191919;
+	overflow: hidden;
 }
 /*////////////////////////////////////////////////////////head-screen///////////////////////////////////////////////////////////////*/
 .container{
@@ -33,7 +34,6 @@ header, section, footer{
 header{
 	padding-top: 30px;
 	width: 100%;
-	height: 100vh;
 }
 header nav{
 	display: flex;
