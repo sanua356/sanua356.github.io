@@ -152,6 +152,8 @@ header nav ul li a:hover{
 .about-me-and-tracks-container{
 	width: 1500px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2;
 	padding-bottom: 150px;
 }
 .photo-and-desc-about-me{
