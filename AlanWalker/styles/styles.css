@@ -31,6 +31,11 @@ header, section, footer{
 	width: 1370px;
 	margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+	.container {
+		width: 100%;
+	}
+}
 header{
 	padding-top: 30px;
 	width: 100%;
@@ -43,10 +48,29 @@ header nav{
 	position: relative;
 	z-index: 5;
 }
+@media screen and (max-width: 480px) {
+	header nav{
+		position: relative;
+		display: block;
+	}
+}
 header nav ul li{
 	display: inline-block;
 	margin-right: 30px;
 	max-width: 445px;
+}
+@media screen and (max-width: 480px) {
+	header nav ul{
+		padding: 0;
+	}
+}
+@media screen and (max-width: 480px) {
+	header nav ul li{
+		display: block;
+		text-align: center;
+		margin-right: 0;
+		padding-bottom: 10px;	
+	}
 }
 header nav ul li a{
 	transition: 0.2s ease;
@@ -59,6 +83,40 @@ header nav ul li a:hover{
 	transition: 0.2s ease;
 	border-bottom: 2px solid #f9f9f9;
 }
+@media screen and (max-width: 480px) {
+	.hamburger-menu{
+		display: none;
+		margin: auto;
+		max-width: 40px;
+		max-height: 40px;
+		color: #ffffff;
+		padding: 5px 10px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		border: 3px solid #ffffff;
+		border-radius: 10px;
+	}
+}
+.hide{
+	opacity: 0;
+	display: none;
+}
+.show{
+	transition: 1s ease-in-out;
+	display: block;
+}
+.animate-hamburger{
+	animation-duration: 1s;
+	animation-name: animate-hamburger;
+}
+@keyframes animate-hamburger{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
 .logo > *{
 	color: #ffffff;
 	font-size: 20px;
@@ -68,6 +126,11 @@ header nav ul li a:hover{
 	letter-spacing: -0.05px;
 	line-height: 14px;
 }
+@media screen and (max-width: 480px) {
+	.logo{
+		text-align: center;
+	}
+}
 .logo i{
 	padding-right: 10px;
 }
@@ -76,6 +139,11 @@ header nav ul li a:hover{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+@media screen and (max-width: 480px) {
+	.photo-and-desc-head-screen{
+		display: block;
+	}
 }
 #logo-bg{
 	position: absolute;
@@ -90,6 +158,11 @@ header nav ul li a:hover{
 	right: 0;
 	opacity: 0.11;
 }
+@media screen and (max-width: 480px) {
+	#logo-bg{
+		max-width: 350px;
+	}
+}
 .photo-block img{
 	max-width: 600px;
 	height: auto;
@@ -97,9 +170,21 @@ header nav ul li a:hover{
 	position: relative;
 	z-index: 2;
 }
+@media screen and (max-width: 480px) {
+	.photo-block img{
+		padding-top: 30px;
+		max-width: 300px;
+	}
+}
 .description-block{
 	padding-top: 100px;
 	padding-right: 250px;
+}
+@media screen and (max-width: 480px) {
+	.description-block{
+		padding-top: 40px;
+		padding-right: 0;
+	}
 }
 .heading{
 	color: #ffffff;
@@ -112,6 +197,12 @@ header nav ul li a:hover{
 	z-index: 3;
 	white-space: nowrap;
 }
+@media screen and (max-width: 480px) {
+	.heading{
+		text-align: center;
+		font-size: 30px;
+	}
+}
 .heading::after{
 	position: absolute;
 	z-index: -2;
@@ -120,6 +211,11 @@ header nav ul li a:hover{
 	margin-left: -99%;
 	white-space: nowrap;
 	height: 50%;
+}
+@media screen and (max-width: 480px) {
+	.heading::after{
+		margin-left: -86%;
+	}
 }
 .heading::before{
 	position: absolute;
@@ -140,6 +236,16 @@ header nav ul li a:hover{
 	font-weight: 400;
 	line-height: 30px;
 }
+@media screen and (max-width: 480px) {
+	.description-block p{
+		padding-top: 1vh;
+		padding-bottom: 3vh;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+}
 .description-block button{
 	color: #ffffff;
 	border: 5px solid #ffffff;
@@ -147,6 +253,13 @@ header nav ul li a:hover{
 	font-size: 20px;
 	font-weight: 300;
 	padding: 10px 25px;
+}
+@media screen and (max-width: 480px) {
+	.description-block button{
+		font-size: 16px;
+		padding: 5px 10px;
+		margin-left: 20px;
+	}
 }
 /*///////////////////////////////////////////////////////////about-me///////////////////////////////////////////*/
 .about-me-and-tracks-container{
@@ -156,11 +269,21 @@ header nav ul li a:hover{
 	z-index: 2;
 	padding-bottom: 150px;
 }
+@media screen and (max-width: 480px) {
+	.about-me-and-tracks-container{
+		width: 100%;
+	}
+}
 .photo-and-desc-about-me{
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+@media screen and (max-width: 480px) {
+	.photo-and-desc-about-me{
+		display: block;
+	}
 }
 .photo-and-desc-about-me > h3{
 	padding-top: 150px;
@@ -171,6 +294,13 @@ header nav ul li a:hover{
 	font-weight: 400;
 	text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+	.photo-and-desc-about-me > h3{
+		padding-top: 50px;
+		padding-bottom: 25px;
+		font-size: 25px;
+	}
+}
 .heading-blocks{
 	padding-top: 150px;
 	padding-bottom: 50px;
@@ -180,19 +310,43 @@ header nav ul li a:hover{
 	font-weight: 400;
 	text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+	.heading-blocks{
+		padding-top: 70px;
+		padding-bottom: 25px;
+		font-size: 30px;
+	}
+}
 .about-me-photo img{
 	max-width: 600px;
 	height: auto;
+}
+@media screen and (max-width: 480px) {
+	.about-me-photo img{
+		max-width: 350px;
+	}
 }
 .about-me-desc{
 	padding-top: 80px;
 	padding-left: 150px;
 	max-width: 650px;
 }
+@media screen and (max-width: 480px) {
+	.about-me-desc{
+		padding-left: 20px;
+		padding-right: 20px;
+		max-width: 350px;
+	}
+}
 .about-me-desc h3{
 	color: #ffffff;
 	font-size: 36px;
 	font-weight: 400;
+}
+@media screen and (max-width: 480px) {
+	.about-me-desc h3{
+		font-size: 30px;
+	}
 }
 .about-me-desc p{
 	margin-top: 50px;
@@ -202,10 +356,21 @@ header nav ul li a:hover{
 	font-weight: 400;
 	line-height: 30px;
 }
+@media screen and (max-width: 480px) {
+	.about-me-desc p{
+		line-height: 1.4;
+		font-size: 12px;
+	}
+}
 .about-me-desc span{
 	color: #d8d8d8;
 	font-size: 30px;
 	font-weight: 400;
+}
+@media screen and (max-width: 480px) {
+	.about-me-desc span{
+		font-size: 20px;
+	}
 }
 .about-me-desc i{
 	color: #ffffff;
@@ -243,8 +408,19 @@ header nav ul li a:hover{
 	background-color: #d8d8d8;
 	margin-bottom: 80px;
 }
+@media screen and (max-width: 480px) {
+	.track{
+		width: 95%;
+		margin-bottom: 40px;
+	}
+}
 .track:nth-child(odd){
 	margin-right: 100px;
+}
+@media screen and (max-width: 480px) {
+	.track:nth-child(odd){
+		margin-right: 0;
+	}
 }
 .track h6{
 	position: absolute;
@@ -281,6 +457,11 @@ header nav ul li a:hover{
     color: #1d1d1d;
     height: 2px;
 }
+@media screen and (max-width: 480px) {
+	.track hr {
+		width: 45%;
+	}
+}
 .time-track{
 	color: #000000;
 	font-size: 12px;
@@ -308,6 +489,11 @@ header nav ul li a:hover{
 	font-weight: 400;
 	text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+	#more-tracks-youtube{
+		font-size: 18px;
+	}
+}
 /*///////////////////////////////////////////////////////////tours///////////////////////////////////////////*/
 .tours-bg{
 	position: relative;
@@ -332,6 +518,11 @@ header nav ul li a:hover{
 	position: relative;
 	z-index: 2;
 }
+@media screen and (max-width: 480px) {
+	.tours-and-contact-me-container{
+		width: 100%;
+	}
+}
 .tour{
 	display: -moz-flex;
 	display: -ms-flex;
@@ -342,6 +533,12 @@ header nav ul li a:hover{
 	align-items: center;
 	margin-bottom: 70px;
 }
+@media screen and (max-width: 480px) {
+	.tour {
+		display: block;
+		text-align: center;
+	}
+}
 .tour:last-child{
 	margin-bottom: 90px;
 }
@@ -351,12 +548,26 @@ header nav ul li a:hover{
 	font-weight: 400;
 	padding-right: 35px;
 }
+@media screen and (max-width: 480px) {
+	.tour span{
+		padding-right: 0;
+		font-size: 16px;
+	}
+}
 .tour p{
 	max-width: 380px;
 	color: #ffffff;
 	font-size: 25px;
 	font-weight: 500;
 	padding-right: 80px;
+}
+@media screen and (max-width: 480px) {
+	.tour p{
+		max-width: 90%;
+		font-size: 18px;
+		padding: 20px 0px;
+		margin: 0 auto;
+	}
 }
 .tour button{
 	max-height: 60px;
@@ -379,6 +590,12 @@ header nav ul li a:hover{
 	line-height: 55px;
 	text-decoration: underline;
 	text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+	#view-all-tours{
+		font-size: 20px;
+		line-height: 1;
+	}
 }
 /*///////////////////////////////////////////////////////////contact-me///////////////////////////////////////////*/
 .contact-me-bg{
@@ -413,6 +630,11 @@ header nav ul li a:hover{
 	padding-bottom: 15px;
 	padding-left: 20px;
 }
+@media screen and (max-width: 480px) {
+	.contact-me-form input{
+		width: 80%;
+	}
+}
 .contact-me-form textarea{
 	display: block;
 	margin: 0 auto;
@@ -423,6 +645,12 @@ header nav ul li a:hover{
 	border-radius: 5px;
 	border: 5px solid #ffffff;
 	margin-bottom: 45px;
+}
+@media screen and (max-width: 480px) {
+	.contact-me-form textarea{
+		width: 80%;
+		height: 150px;
+	}
 }
 .contact-me-form button{
 	color: #000000;
@@ -438,6 +666,12 @@ header nav ul li a:hover{
 	font-size: 35px;
 	font-weight: 400;
 	padding: 0px 40px;
+}
+@media screen and (max-width: 480px) {
+	.social-icons-contact-me i{
+		font-size: 35px;
+		padding: 20px 40px
+	}
 }
 .contact-me-form input::-webkit-input-placeholder{
 	color: #ffffff;
