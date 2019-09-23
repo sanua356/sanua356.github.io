@@ -1,3 +1,4 @@
+//Audio-player
 document.addEventListener("DOMContentLoaded", function() { startplayer(); startplayer2(); startplayer3(); startplayer4(); startplayer5(); startplayer6(); }, false);
 var player;
 var player2;
@@ -83,8 +84,8 @@ function pause_aud6()
 {
  player6.pause();
 }
-
-
+//Audio-player-end
+//scroll-menu
 $(document).ready(function(){
 	$("#scroll-effect-js").on("click","a", function (event) {
 	    event.preventDefault();
@@ -92,8 +93,8 @@ $(document).ready(function(){
 		    top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
-});
-$(document).ready(function() {
+//scroll-menu-end
+//AOS Animate	
   	AOS.init()
 	AOS.init({
 		disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -115,4 +116,16 @@ $(document).ready(function() {
 		mirror: false, // whether elements should animate out while scrolling past them
 		anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation);
 	});
+});	
+//Hamburger-menu-animate
+$(document).ready(function() {
+	$(".hamburger-menu").on("click", function() {
+		$("li").toggleClass("hide");
+		$("li").toggleClass("animate-hamburger");
+	});
+	  if ( $(window).width() <= 480 ) {
+      $("li").addClass("hide");
+      $(".hamburger-menu").addClass("show");
+    }
 });
+//Hamburger-menu-animate-end
