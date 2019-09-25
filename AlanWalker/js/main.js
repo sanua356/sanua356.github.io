@@ -6,6 +6,7 @@ var player3;
 var player4;
 var player5;
 var player6;
+
 function startplayer() 
 {
  player = document.getElementById('music_player');
@@ -44,6 +45,10 @@ function pause_aud()
 {
  player.pause();
 }
+function change_vol()
+{
+ player.volume=document.getElementById("change_vol").value;
+}
 function play_aud2() 
 {
  player2.play();
@@ -51,6 +56,10 @@ function play_aud2()
 function pause_aud2() 
 {
  player2.pause();
+}
+function change_vol2()
+{
+ player2.volume=document.getElementById("change_vol2").value;
 }
 function play_aud3() 
 {
@@ -60,6 +69,10 @@ function pause_aud3()
 {
  player3.pause();
 }
+function change_vol3()
+{
+ player3.volume=document.getElementById("change_vol3").value;
+}
 function play_aud4() 
 {
  player4.play();
@@ -67,6 +80,10 @@ function play_aud4()
 function pause_aud4() 
 {
  player4.pause();
+}
+function change_vol4()
+{
+ player4.volume=document.getElementById("change_vol4").value;
 }
 function play_aud5() 
 {
@@ -76,6 +93,10 @@ function pause_aud5()
 {
  player5.pause();
 }
+function change_vol5()
+{
+ player5.volume=document.getElementById("change_vol5").value;
+}
 function play_aud6() 
 {
  player6.play();
@@ -83,6 +104,10 @@ function play_aud6()
 function pause_aud6() 
 {
  player6.pause();
+}
+function change_vol6()
+{
+ player6.volume=document.getElementById("change_vol6").value;
 }
 //Audio-player-end
 //scroll-menu
