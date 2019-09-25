@@ -123,7 +123,7 @@ $(document).ready(function() {
 		$("li").toggleClass("hide");
 		$("li").toggleClass("animate-hamburger");
 	});
-	  if ( $(window).width() <= 480 ) {
+	  if ( $(window).width() <= 768 ) {
       $("li").addClass("hide");
       $(".hamburger-menu").addClass("show");
     }
