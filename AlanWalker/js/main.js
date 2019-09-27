@@ -1,40 +1,25 @@
 //Audio-player
-document.addEventListener("DOMContentLoaded", function() { startplayer(); startplayer2(); startplayer3(); startplayer4(); startplayer5(); startplayer6(); }, false);
-var player;
-var player2;
-var player3;
-var player4;
-var player5;
-var player6;
+document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
+var player = document.getElementById('music_player');
+var player2 = document.getElementById('music_player2');
+var player3 = document.getElementById('music_player3');
+var player4 = document.getElementById('music_player4');
+var player5 = document.getElementById('music_player5');
+var player6 = document.getElementById('music_player6');
 
+var playhead = document.getElementById("playhead");
+var playhead2 = document.getElementById("playhead2");
+var playhead3 = document.getElementById("playhead3");
+var playhead4 = document.getElementById("playhead4");
+var playhead5 = document.getElementById("playhead5");
+var playhead6 = document.getElementById("playhead6");
 function startplayer() 
 {
- player = document.getElementById('music_player');
  player.controls = false;
-}
-function startplayer2() 
-{
- player2 = document.getElementById('music_player2');
  player2.controls = false;
-}
-function startplayer3() 
-{
- player3 = document.getElementById('music_player3');
  player3.controls = false;
-}
-function startplayer4() 
-{
- player4 = document.getElementById('music_player4');
  player4.controls = false;
-}
-function startplayer5() 
-{
- player5 = document.getElementById('music_player5');
  player5.controls = false;
-}
-function startplayer6() 
-{
- player6 = document.getElementById('music_player6');
  player6.controls = false;
 }
 function play_aud() 
@@ -49,6 +34,14 @@ function change_vol()
 {
  player.volume=document.getElementById("change_vol").value;
 }
+player.addEventListener("timeupdate", function(){
+  var duration = this.duration;
+  var currentTime = this.currentTime;
+  var percentage = (currentTime / duration) * 100;
+  playhead.style.left = percentage * 2 + 'px'; 
+});
+
+
 function play_aud2() 
 {
  player2.play();
@@ -61,6 +54,14 @@ function change_vol2()
 {
  player2.volume=document.getElementById("change_vol2").value;
 }
+player2.addEventListener("timeupdate", function(){
+  var duration2 = this.duration;
+  var currentTime2 = this.currentTime;
+  var percentage2 = (currentTime2 / duration2) * 100;
+  playhead2.style.left = percentage2 * 3 + 'px'; 
+});
+
+
 function play_aud3() 
 {
  player3.play();
@@ -73,6 +74,14 @@ function change_vol3()
 {
  player3.volume=document.getElementById("change_vol3").value;
 }
+player3.addEventListener("timeupdate", function(){
+  var duration3 = this.duration;
+  var currentTime3 = this.currentTime;
+  var percentage3 = (currentTime3 / duration3) * 100;
+  playhead3.style.left = percentage3 * 2 + 'px'; 
+});
+
+
 function play_aud4() 
 {
  player4.play();
@@ -85,6 +94,14 @@ function change_vol4()
 {
  player4.volume=document.getElementById("change_vol4").value;
 }
+player4.addEventListener("timeupdate", function(){
+  var duration4 = this.duration;
+  var currentTime4 = this.currentTime;
+  var percentage4 = (currentTime4 / duration4) * 100;
+  playhead4.style.left = percentage4 * 2 + 'px'; 
+});
+
+
 function play_aud5() 
 {
  player5.play();
@@ -97,6 +114,14 @@ function change_vol5()
 {
  player5.volume=document.getElementById("change_vol5").value;
 }
+player5.addEventListener("timeupdate", function(){
+  var duration5 = this.duration;
+  var currentTime5 = this.currentTime;
+  var percentage5 = (currentTime5 / duration5) * 100;
+  playhead5.style.left = percentage5 * 2 + 'px'; 
+});
+
+
 function play_aud6() 
 {
  player6.play();
@@ -109,6 +134,15 @@ function change_vol6()
 {
  player6.volume=document.getElementById("change_vol6").value;
 }
+player6.addEventListener("timeupdate", function(){
+  var duration6 = this.duration;
+  var currentTime6 = this.currentTime;
+  var percentage6 = (currentTime6 / duration6) * 100;
+  playhead6.style.left = percentage6 * 2 + 'px'; 
+});
+
+
+
 //Audio-player-end
 //scroll-menu
 $(document).ready(function(){

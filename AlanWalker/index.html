@@ -82,19 +82,17 @@
 							<i class="fas fa-play" onclick="play_aud()"></i>
 							<i class="fas fa-pause" onclick="pause_aud()"></i>
 						</div>
-						<input type="range" id="change_vol" class="track__change-volume" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+						<div class="track__volume">
+							<i class="fas fa-volume-down track__change-volume-icon"></i>
+							<input type="range" id="change_vol" class="track__change-volume" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+						</div>
+						
 						<audio id="music_player">
 							<source src="music/alone.mp3"/>
 						</audio>
 						<h6>Alone</h6>
 						<div class="timeline">
-							<hr>
-							<div class="start-timeline time-track">
-								0:00
-							</div>
-							<div class="end-timeline time-track">
-								3:41
-							</div>
+							<div class="playhead" id="playhead"></div>
 						</div>
 						<div class="nav-track reply-star-btn">
 							<i class="fas fa-reply"></i>
@@ -106,19 +104,16 @@
 							<i class="fas fa-play" onclick="play_aud2()"></i>
 							<i class="fas fa-pause" onclick="pause_aud2()"></i>
 						</div>
-						<input type="range" id="change_vol2" class="track__change-volume" onchange="change_vol2()" step="0.05" min="0" max="1" value="1">
+						<div class="track__volume">
+							<i class="fas fa-volume-down track__change-volume-icon"></i>
+							<input type="range" id="change_vol2" class="track__change-volume" onchange="change_vol2()" step="0.05" min="0" max="1" value="1">
+						</div>
 						<audio id="music_player2">
 							<source src="music/darkside.mp3"/>
 						</audio>
 						<h6>Darkside</h6>
 						<div class="timeline">
-							<hr>
-							<div class="start-timeline time-track">
-								0:00
-							</div>
-							<div class="end-timeline time-track">
-								3:31
-							</div>
+							<div class="playhead" id="playhead2"></div>
 						</div>
 						<div class="nav-track reply-star-btn">
 							<i class="fas fa-reply"></i>
@@ -130,19 +125,16 @@
 							<i class="fas fa-play" onclick="play_aud3()"></i>
 							<i class="fas fa-pause" onclick="pause_aud3()"></i>
 						</div>
-						<input type="range" id="change_vol3" class="track__change-volume" onchange="change_vol3()" step="0.05" min="0" max="1" value="1">
+						<div class="track__volume">
+							<i class="fas fa-volume-down track__change-volume-icon"></i>
+							<input type="range" id="change_vol3" class="track__change-volume" onchange="change_vol3()" step="0.05" min="0" max="1" value="1">
+						</div>
 						<audio id="music_player3">
 							<source src="music/ignite.mp3"/>
 						</audio>
 						<h6>Ignite</h6>
 						<div class="timeline">
-							<hr>
-							<div class="start-timeline time-track">
-								0:00
-							</div>
-							<div class="end-timeline time-track">
-								3:49
-							</div>
+							<div class="playhead" id="playhead3"></div>
 						</div>
 						<div class="nav-track reply-star-btn">
 							<i class="fas fa-reply"></i>
@@ -154,19 +146,16 @@
 							<i class="fas fa-play" onclick="play_aud4()"></i>
 							<i class="fas fa-pause" onclick="pause_aud4()"></i>
 						</div>
-						<input type="range" id="change_vol4" class="track__change-volume" onchange="change_vol4()" step="0.05" min="0" max="1" value="1">
+						<div class="track__volume">
+							<i class="fas fa-volume-down track__change-volume-icon"></i>
+							<input type="range" id="change_vol4" class="track__change-volume" onchange="change_vol4()" step="0.05" min="0" max="1" value="1">
+						</div>
 						<audio id="music_player4">
 							<source src="music/faded.mp3"/>
 						</audio>
 						<h6>Faded</h6>
-						<div class="timeline">
-							<hr>
-							<div class="start-timeline time-track">
-								0:00
-							</div>
-							<div class="end-timeline time-track">
-								3:32
-							</div>
+						<div class="timeline" id="timeline">
+							<div class="playhead" id="playhead4"></div>
 						</div>
 						<div class="nav-track reply-star-btn">
 							<i class="fas fa-reply"></i>
@@ -178,19 +167,16 @@
 							<i class="fas fa-play" onclick="play_aud5()"></i>
 							<i class="fas fa-pause" onclick="pause_aud5()"></i>
 						</div>
-						<input type="range" id="change_vol5" class="track__change-volume" onchange="change_vol5()" step="0.05" min="0" max="1" value="1">
+						<div class="track__volume">
+							<i class="fas fa-volume-down track__change-volume-icon"></i>
+							<input type="range" id="change_vol5" class="track__change-volume" onchange="change_vol5()" step="0.05" min="0" max="1" value="1">
+						</div>
 						<audio id="music_player5">
 							<source src="music/unity.mp3"/>
 						</audio>
 						<h6>Unity</h6>
 						<div class="timeline">
-							<hr>
-							<div class="start-timeline time-track">
-								0:00
-							</div>
-							<div class="end-timeline time-track">
-								3:49
-							</div>
+							<div class="playhead" id="playhead5"></div>
 						</div>
 						<div class="nav-track reply-star-btn">
 							<i class="fas fa-reply"></i>
@@ -202,19 +188,16 @@
 							<i class="fas fa-play"  onclick="play_aud6()"></i>
 							<i class="fas fa-pause" onclick="pause_aud6()"></i>
 						</div>
-						<input type="range" id="change_vol6" class="track__change-volume" onchange="change_vol6()" step="0.05" min="0" max="1" value="1">
+						<div class="track__volume">
+							<i class="fas fa-volume-down track__change-volume-icon"></i>
+							<input type="range" id="change_vol6" class="track__change-volume" onchange="change_vol6()" step="0.05" min="0" max="1" value="1">
+						</div>
 						<audio id="music_player6">
 							<source src="music/play.mp3"/>
 						</audio>
 						<h6>Play</h6>
 						<div class="timeline">
-							<hr>
-							<div class="start-timeline time-track">
-								0:00
-							</div>
-							<div class="end-timeline time-track">
-								3:34
-							</div>
+							<div class="playhead" id="playhead6"></div>
 						</div>
 						<div class="nav-track reply-star-btn">
 							<i class="fas fa-reply"></i>

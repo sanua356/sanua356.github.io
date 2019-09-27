@@ -147,8 +147,18 @@ header nav ul li a:hover{
 	display: block;
 }
 .animate-hamburger{
-	animation-duration: 1s;
-	animation-name: animate-hamburger;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-name: animate-hamburger;
+	        animation-name: animate-hamburger;
+}
+@-webkit-keyframes animate-hamburger{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 @keyframes animate-hamburger{
 	0%{
@@ -271,7 +281,7 @@ header nav ul li a:hover{
 }
 @media screen and (max-width: 480px) {
 	.heading{
-		font-size: 30px;
+		font-size: 35px;
 	}
 }
 @media screen and (min-width:481px) and (max-width: 768px) {
@@ -284,18 +294,18 @@ header nav ul li a:hover{
 	z-index: -2;
 	content: "ALAN WALKER";
 	color: #0271fa;
-	margin-left: -99%;
+	margin-left: -555px;
 	white-space: nowrap;
 	height: 50%;
 }
-@media screen and (min-width:1px) and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.heading::after{
-		margin-left: -86%;
+		margin-left: -315px;
 	}
 }
-@media screen and (min-width:769px) and (max-width: 992px) {
+@media screen and (min-width:481px) and (max-width: 768px) {
 	.heading::after{
-		margin-left: -62%;
+		margin-left: -512px;
 	}
 }
 .heading::before{
@@ -540,10 +550,16 @@ header nav ul li a:hover{
 		margin-bottom: 40px;
 	}
 }
+@media screen and (min-width:769px) and (max-width: 1201px) {
+	.track{
+		width: 80%;
+		margin-bottom: 40px;
+	}
+}
 .track:nth-child(odd){
 	margin-right: 100px;
 }
-@media screen and (min-width:1px) and (max-width: 768px) {
+@media screen and (min-width:1px) and (max-width: 1201px) {
 	.track:nth-child(odd){
 		margin-right: 0;
 	}
@@ -593,12 +609,24 @@ input[type=range]::-webkit-slider-thumb {
 	position: absolute;
 	z-index: 5;
 	right: 10px;
-	top: 10px;
+	top: 15px;
 }
-.track hr {
+.track__change-volume-icon{
+	position: absolute;
+	z-index: 1;
+	right: 13%;
+	top: 7px;
+	font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+	.track__change-volume-icon{
+		right: 16%;
+	}
+}
+.timeline {
 	position: absolute;
 	left: 85px;
-	bottom: 5px;
+	bottom: 30%;
 	width: 65%;
 	z-index: 1;
     border: none;
@@ -606,14 +634,24 @@ input[type=range]::-webkit-slider-thumb {
     color: #1d1d1d;
     height: 2px;
 }
+.playhead{
+	position: absolute;
+	top: -3px;
+	left: 0;
+	z-index: 55555;
+	width: 10px;
+	height: 10px;
+	background: #1d1d1d;
+	border-radius: 5px;
+}
 @media screen and (max-width: 480px) {
-	.track hr {
-		width: 45%;
+	.timeline {
+		width: 50%;
 	}
 }
 @media screen and (min-width:769px) and (max-width: 992px) {
-	.track hr {
-		width: 45%;
+	.timeline {
+		width: 70%;
 	}
 }
 .time-track{
