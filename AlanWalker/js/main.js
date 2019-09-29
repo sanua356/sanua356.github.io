@@ -37,8 +37,8 @@ function change_vol()
 player.addEventListener("timeupdate", function(){
   var duration = this.duration;
   var currentTime = this.currentTime;
-  var percentage = (currentTime / duration) * 100;
-  playhead.style.left = percentage * 2 + 'px'; 
+  var percentage = (currentTime / duration) * 70;
+  playhead.style.left = percentage * 4 + 'px'; 
 });
 
 
