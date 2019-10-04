@@ -26,6 +26,11 @@ header, section, footer{
 	background-color: #191919;
 	overflow: hidden;
 }
+@media screen and (min-width:1px) and (max-width: 768px) {
+	header, section, footer{
+		background-color: #000000;
+	}
+}
 input[type=range] {
   -webkit-appearance: none;
   width: 10%;
@@ -146,13 +151,13 @@ header nav ul li a:hover{
 	transition: 1s ease-in-out;
 	display: block;
 }
-.animate-hamburger{
+.opct-animate{
 	-webkit-animation-duration: 1s;
 	        animation-duration: 1s;
-	-webkit-animation-name: animate-hamburger;
-	        animation-name: animate-hamburger;
+	-webkit-animation-name: opct-animate;
+	        animation-name: opct-animate;
 }
-@-webkit-keyframes animate-hamburger{
+@-webkit-keyframes opct-animate{
 	0%{
 		opacity: 0;
 	}
@@ -160,12 +165,34 @@ header nav ul li a:hover{
 		opacity: 1;
 	}
 }
-@keyframes animate-hamburger{
+@keyframes opct-animate{
 	0%{
 		opacity: 0;
 	}
 	100%{
 		opacity: 1;
+	}
+}
+.opct-rv-animate{
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-name: opct-rv-animate;
+	        animation-name: opct-rv-animate;
+}
+@-webkit-keyframes opct-rv-animate{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes opct-rv-animate{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
 	}
 }
 .logo > *{
@@ -369,7 +396,6 @@ header nav ul li a:hover{
 	.description-block button{
 		font-size: 16px;
 		padding: 5px 10px;
-		margin-left: 20px;
 	}
 }
 @media screen and (min-width:481px) and (max-width: 992px) {
@@ -465,17 +491,14 @@ header nav ul li a:hover{
 		max-width: 350px;
 	}
 }
-@media screen and (min-width:481px) and (max-width: 768px) {
-	.about-me-desc{
-		padding-left: 30px;
-		padding-right: 30px;
-		max-width: 550px;
-	}
-}
-@media screen and (min-width:769px) and (max-width: 992px) {
+@media screen and (min-width:1px) and (max-width: 992px) {
 	.about-me-desc{
 		text-align: center;
 		margin: 0 auto;
+	}
+}
+@media screen and (min-width:481px) and (max-width: 992px) {
+	.about-me-desc{
 		padding-left: 30px;
 		padding-right: 30px;
 		max-width: 550px;
@@ -510,6 +533,10 @@ header nav ul li a:hover{
 	font-size: 30px;
 	font-weight: 400;
 }
+.about-me-desc button{
+	background: none;
+	border: none;
+}
 @media screen and (max-width: 480px) {
 	.about-me-desc span{
 		font-size: 20px;
@@ -517,6 +544,16 @@ header nav ul li a:hover{
 }
 .about-me-desc i{
 	color: #ffffff;
+}
+.slide2{
+	display: none;
+}
+.slide3{
+	display: none;
+}
+.slider-count{
+	color: #ffffff;
+	font-size: 200px;
 }
 /*///////////////////////////////////////////////////////////tracks///////////////////////////////////////////*/
 .tracks-bg{
@@ -866,8 +903,37 @@ input[type=range]::-ms-thumb {
 	text-decoration: underline;
 	text-transform: uppercase;
 }
+.view-all-tours-btn{
+	text-align: center;
+}
+#view-all-tours-btn{
+	background: none;
+	border: none;
+}
 @media screen and (max-width: 480px) {
 	#view-all-tours{
+		font-size: 20px;
+		line-height: 1;
+	}
+}
+#hide-all-tours{
+	text-align: center;
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 55px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.hide-all-tours-btn{
+	text-align: center;
+}
+#hide-all-tours-btn{
+	background: none;
+	border: none;	
+}
+@media screen and (max-width: 480px) {
+	#hide-all-tours{
 		font-size: 20px;
 		line-height: 1;
 	}
