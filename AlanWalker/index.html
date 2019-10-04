@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,900&display=swap" rel="stylesheet">	
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="libs/bootstrap-reboot.css">
 	<link rel="stylesheet" href="styles/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +36,7 @@
 				<div class="description-block">
 					<h1 class="heading" data-aos="fade-right">Alan Walker</h1>
 					<p data-aos="fade-right">Is a British-born Norwegian DJ and record producer. He is best known for his 2015 single "Faded" which received diamond certifications in Germany and Poland and multi-platinum certifications in over 10 countries including the US and the UK. He released his debut studio album, Different World, in 2018. He was ranked 36th on DJ Mag's Top 100 DJs list of 2018.</p>
-					<button data-aos="fade-right">Listen to musik</button>
+					<a href="#ex3"><button data-aos="fade-right">Listen to musik</button></a>
 				</div>
 				<div class="photo-block" data-aos="fade-left">
 					<img src="img/Head-screen/head-photo.png" alt="Алан Уокер главное фото">
@@ -51,22 +53,60 @@
 				</div>
 				<div class="about-me-desc">
 					<h3 data-aos="fade-left">My Life</h3>
-					<p data-aos="fade-left">British-born Norwegian DJ and record producer.
-						<br/><br/>
-						 At the age of two, moved to Bergen, Norway, 
-						with his parents and siblings. Grew up with two 
-						siblings, an older sister. 
-						Inspired by the producers of EDM K-391 and Ahrix, 
-						as well as composers such as Hans Zimmer and 
-						Steve Jablonski, I started releasing my music on 
-						my laptop using FL Studio. 
-						<br/><br/>
-						In July 2012, thanks to feedback from his fans on 
-						the Internet, he began his music career and 
-						slowly began publishing his music on YouTube 
-						and SoundCloud.
-					</p>
-					<span data-aos="fade-left"><a href="#"><i class="fas fa-angle-left"></i></a> 1 / 3 <a href="#"><i class="fas fa-angle-right"></i></a></span>
+					<div class="slider-desc" data-aos="fade-left" data-aos-offset="10">
+						<div class="slide1">
+								<p>British-born Norwegian DJ and record producer.
+								<br/><br/>
+								 At the age of two, moved to Bergen, Norway, 
+								with his parents and siblings. Grew up with two 
+								siblings, an older sister. 
+								Inspired by the producers of EDM K-391 and Ahrix, 
+								as well as composers such as Hans Zimmer and 
+								Steve Jablonski, I started releasing my music on 
+								my laptop using FL Studio. 
+								<br/><br/>
+								In July 2012, thanks to feedback from his fans on 
+								the Internet, he began his music career and 
+								slowly began publishing his music on YouTube 
+								and SoundCloud.
+							</p>
+						</div>
+						<div class="slide2">
+								<p>British-born Norwegian DJ and record producer1.
+								<br/><br/>
+								 At the age of two, moved to Bergen, Norway, 
+								with his parents and siblings. Grew up with two 
+								siblings, an older sister. 
+								Inspired by the producers of EDM K-391 and Ahrix, 
+								as well as composers such as Hans Zimmer and 
+								Steve Jablonski, I started releasing my music on 
+								my laptop using FL Studio. 
+								<br/><br/>
+								In July 2012, thanks to feedback from his fans on 
+								the Internet, he began his music career and 
+								slowly began publishing his music on YouTube 
+								and SoundCloud.
+							</p>
+						</div>
+						<div class="slide3">
+								<p>British-born Norwegian DJ and record producer2.
+								<br/><br/>
+								 At the age of two, moved to Bergen, Norway, 
+								with his parents and siblings. Grew up with two 
+								siblings, an older sister. 
+								Inspired by the producers of EDM K-391 and Ahrix, 
+								as well as composers such as Hans Zimmer and 
+								Steve Jablonski, I started releasing my music on 
+								my laptop using FL Studio. 
+								<br/><br/>
+								In July 2012, thanks to feedback from his fans on 
+								the Internet, he began his music career and 
+								slowly began publishing his music on YouTube 
+								and SoundCloud.
+							</p>
+						</div>		
+					</div>
+					<span data-aos="fade-left" ><button id="prev-arrow"><i class="fas fa-angle-left"></i></button> <span id="current-slide">1</span> / 3 <button id="next-arrow"><i class="fas fa-angle-right"></i></button></span>
 				</div>
 			</div>
 		</div>
@@ -234,11 +274,32 @@
 					<p>Oslo Spektrum Grünerløkka (Norway)</p>
 					<button type="button">Buy ticket</button>
 				</div>
-				<a href="#">
-					<h5 id="view-all-tours" data-aos="fade-up">
-						View All tours  <i class="fas fa-angle-double-down"></i>
-					</h5>
-				</a>
+				<div class="view-all-tours-btn">
+					<button type="button" id="view-all-tours-btn">
+						<h5 id="view-all-tours" data-aos="fade-up">
+							View All tours  <i class="fas fa-angle-double-down"></i>
+						</h5>
+					</button>
+				</div>	
+				<div class="shows-tours hide">
+					<div class="tour" data-aos="fade-up">
+						<span>18.10</span>
+						<p>STORY MIAMIMiami Beach (United States)</p>
+						<button type="button">Buy ticket</button>
+					</div>
+					<div class="tour" data-aos="fade-up">
+						<span>19.10</span>
+						<p>Alan Walker - Clubhouse FestivalLaurel (United States)</p>
+						<button type="button">Buy ticket</button>
+					</div>
+					<div class="hide-all-tours-btn">
+						<button type="button" id="hide-all-tours-btn">
+							<h5 id="hide-all-tours" data-aos="fade-up">
+								Hide 2020 tours   <i class="fas fa-angle-double-up"></i>
+							</h5>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -275,6 +336,7 @@
 	</footer>
 	<script src="libs/jquery-3.4.1.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
