@@ -20,15 +20,6 @@ $(document).ready(function() {
     	});
 	});
 });
-
-$(document).ready(function(){
-	$("#scroll-effect-js").on("click","a", function (event) {
-	    event.preventDefault();
-		var id  = $(this).attr('href'),
-		    top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 1500);
-	});
-});
 $(document).ready(function(){
     $(".scroll-down-header").on("click","a", function (event) {
         event.preventDefault();
@@ -55,6 +46,41 @@ $(document).ready(function() {
       $(".hamburger-menu").addClass("show");
     }
 });
+$(document).ready(function() {
+	$(".submenu-btn1").on("click", function() {
+		$(".submenu1").toggleClass("show");
+		$(".submenu1").removeClass("hide");
+		$(".submenu2").addClass("hide");
+		$(".submenu3").addClass("hide");
+		$(".submenu1").toggleClass("opct-animate");
+	});
+	$(".submenu-btn2").on("click", function() {
+		$(".submenu2").toggleClass("show");
+		$(".submenu2").removeClass("hide");
+		$(".submenu1").addClass("hide");
+		$(".submenu3").addClass("hide");
+		$(".submenu2").toggleClass("opct-animate");
+	});
+	$(".submenu-btn3").on("click", function() {
+		$(".submenu3").toggleClass("show");
+		$(".submenu3").removeClass("hide");
+		$(".submenu1").addClass("hide");
+		$(".submenu2").addClass("hide");
+		$(".submenu3").toggleClass("opct-animate");
+	});
+});
+$(document).ready(function() {
+  	 $('.news-template-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: '#arrow-left',
+  prevArrow: '#arrow-right',
+  dots: true,
+	});
+});
+
 $(document).ready(function() {
   	AOS.init()
 	AOS.init({
