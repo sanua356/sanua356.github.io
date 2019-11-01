@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>МБОУ "Бутылицкая СОШ"</title>
 	<link rel="stylesheet" href="libs/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-	
 	<link rel="stylesheet" href="styles/styles.css">
 	<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+<body link="#ffffff" vlink="#ffffff" alink="#ffffff">
 	<header>	
 		<div class="container" id="ex1">
 			<nav>
@@ -24,12 +23,45 @@
 				<div class="hamburger-menu">
 					<i class="fas fa-bars"></i>
 				</div>
-				<ul data-aos="fade-left" id="scroll-effect-js">
+				<ul data-aos="fade-left">
 					<a href="#ex1"><li>Главная</li></a>
-					<a href="#ex2"><li>О нас <i class="fas fa-chevron-down"></i></li></a>
-					<a href="#ex3"><li>Новости</li></a>
-					<a href="#ex4"><li>Родителям <i class="fas fa-chevron-down"></i></li></a>
-					<a href="#ex5"><li>Ученикам <i class="fas fa-chevron-down"></i></li></a>
+					<a href="#ex1" class="submenu-btn1"><li>О нас <i class="fas fa-chevron-down"></i>
+						<div class="submenu submenu1">
+						<a href="about-us__general-information.html" class="submenu-item">•Основные сведения.</a>
+						<a href="about-us__structure-and-control-organization.html" class="submenu-item">•Структура и органы управления образовательной организацией.</a>
+						<a href="about-us__documents.html" class="submenu-item">•Документы. </a>
+						<a href="about-us__ecucation.html" class="submenu-item">•Образование.</a>
+						<a href="#" class="submenu-item">•Образовательные стандарты.</a>
+						<a href="#" class="submenu-item">•Руководство. Педагогический состав.</a>
+						<a href="#" class="submenu-item">•Материально-техническое обеспечение и оснащенность образовательного процесса.</a>
+						<a href="#" class="submenu-item">•Стипендии и иные виды материальной поддержки. </a>
+						<a href="#" class="submenu-item">•Платные образовательные услуги.</a>
+						<a href="#" class="submenu-item">•Финансово-хозяйственная деятельность.</a>	
+						<a href="#" class="submenu-item">•Вакантные места места для приема (перевода).</a>				
+					</div>
+					</li></a>
+					<a href="news.html"><li>Новости</li></a>
+					<a href="#ex1" class="submenu-btn2"><li>Родителям <i class="fas fa-chevron-down"></i>
+					<div class="submenu submenu2">
+						<a href="#" class="submenu-item">•Прием в 1-й класс</a>
+						<a href="#" class="submenu-item">•Электронные дневники и журналы</a>
+						<a href="#" class="submenu-item">•Договор о предоставлении общего образования</a>
+						<a href="#" class="submenu-item">•Информация для родителей</a>
+						<a href="#" class="submenu-item">•Памятка для родителей</a>	
+						<a href="#" class="submenu-item">•Родителям о ФГОС</a>
+						<a href="#" class="submenu-item">•Родительское собрание</a>	
+					</div>
+					</li></a>
+					<a href="#ex1" class="submenu-btn3"><li>Ученикам <i class="fas fa-chevron-down"></i>
+					<div class="submenu submenu3">
+						<a href="#" class="submenu-item">•Памятка для учащихся</a>
+						<a href="#" class="submenu-item">•Памятка для выпускников</a>
+						<a href="#" class="submenu-item">•Береги свою жизнь</a>
+						<a href="#" class="submenu-item">•Участникам ЕГЭ и ГИА</a>
+						<a href="#" class="submenu-item">•Консультации</a>	
+						<a href="#" class="submenu-item">•Виртуальный кабинет профориентации	</a>
+					</div>
+					</li></a>	
 				</ul>
 			</nav>
 			<div class="name-and-desc-header">
@@ -37,10 +69,10 @@
 				<h1 data-aos="fade-up" data-aos-delay="100">Бутылицкая школа социального успеха</h1>
 				<button data-aos="fade-up" data-aos-delay="200" data-aos-offset="10">Стань одним из нас!</button>
 			</div>
-			<div class="scroll-down-header" data-aos="fade-in" data-aos-offset="10">
+			<div class="scroll-down-header">
 				<a href="#ex3"><img src="img/header/arrow-down-head.png" alt="Прокрутить вниз"></a>
 			</div>
-			<div class="slider-nav" data-aos="fade-out">
+			<div class="slider-nav">
 				<div class="slider-nav-buttons">
 					<div class="nav-arrows"><i class="fas fa-chevron-left"></i></div>
 					<div class="nav-points"></div>
@@ -55,7 +87,7 @@
 	</header>
 	<section>
 		<div class="about-me-bg">
-			<div class="about-me-container" id="ex2">
+			<div class="about-me-container" id="ex3">
 				<div class="main-photo-block" data-aos="fade-right">
 					<img src="img/about-me/astashkina.jpg" alt="Главное фото обо мне">
 				</div>
@@ -87,7 +119,7 @@
 		</div>	
 	</section>
 	<section>
-		<div class="portfolio-container" id="ex4">
+		<div class="portfolio-container">
 			<div class="portfolio-description-block" data-aos="fade-right" data-aos-offset="400">
 				<h4>Галерея</h4>
 				<p>Здесь собраны последние фото 
@@ -95,7 +127,7 @@
 				были всегла в курсе последних 
 				событий, происходящих у нас.
  				</p>
- 				<a href="#"><u>Все новости</u></a>
+ 				<a href="news.html"><u>Все новости</u></a>
 			</div>
 			<div class="portfolio-galery-block grid"data-aos-offset="400">
 				<img src="img/portfolio/galery/photo1.jpg" alt="Фото из галереи 1" class="grid-item" data-aos-offset="10"data-aos="fade-in" data-aos-delay="50">
@@ -105,20 +137,20 @@
 				<img src="img/portfolio/galery/photo5.jpg" alt="Фото из галереи 5" class="grid-item" data-aos-offset="10"data-aos="fade-in" data-aos-delay="250">
 				<img src="img/portfolio/galery/photo2.jpg" alt="Фото из галереи 6" class="grid-item" data-aos-offset="10"data-aos="fade-in" data-aos-delay="300">
 				<img src="img/portfolio/galery/photo7.jpg" alt="Фото из галереи 7" class="grid-item" data-aos-offset="10"data-aos="fade-in" data-aos-delay="350">
-				<button class="see-more-button" data-aos="zoom-in">Все новости</button>
+				<a href="news.html"><button class="see-more-button" data-aos="zoom-in">Все новости</button></a>
 			</div>
 		</div>
 	</section>
 	<section>
 		<div class="blog-posts-bg">
-			<div class="blog-posts-container" id="ex5">
+			<div class="blog-posts-container">
 				<div class="blog-post" data-aos="fade-down" data-aos-offset="300">
 					<img src="img/latest-news/den_znanii.JPG" alt="Новость 1">
 					<div class="blog-post-desc theme-and-date">
 						<h5>День знаний</h5>
 						<span><strong>Бутылицы - </strong> 02.09.2019</span>
 						<p class="desc-post">2 сентября состоялся концерт посвящённый дню знаний. Также после концерта состоялось торжественное открытие парка культуты и отдыха в с.Бутылицы.</p>
-						<button>Подробнее</button>
+						<a href="first-news.html"><button>Подробнее</button></a>
 					</div>	
 				</div>
 				<div class="blog-posts-name-and-desc" data-aos="fade-up" data-aos-offset="300">
@@ -131,7 +163,7 @@
 							<h5>День учителя</h5>
 							<span><strong>Бутылицы - </strong> 04.10.2019</span>
 							<p class="desc-post">4 сентября состоялся концерт посвящённый дню учителя в актовом зале нашей школы. В нём приняли участие практически все наши ученики, представив свои номера.</p>
-							<button>Подробнее</button>
+							<a href="first-news.html"><button>Подробнее</button></a>
 						</div>	
 					</div>
 				</div>	
@@ -141,7 +173,7 @@
 						<h5>Экологический субботник  "Живи, лес!" </h5>
 						<span><strong>Бутылицы - </strong> 20.09.2019</span>
 						<p class="desc-post">20 сентября наши ученики, учасники движения “Ветер перемен” приняли участие в субботнике “Живи, лес!”. В нём было высажено большое колличество деревьев.</p>
-						<button>Подробнее</button>
+						<a href="first-news.html"><button>Подробнее</button></a>
 					</div>	
 				</div>
 			</div>
@@ -153,7 +185,7 @@
 				<h3 data-aos="fade-up">Задайте свой вопрос нам</h3>
 				<input type="text" placeholder="*Ваше имя" data-aos="fade-up" data-aos-delay="50">
 				<input type="text" placeholder="*Ваш Email" data-aos="fade-up" data-aos-delay="150">
-				<textarea name="message" id="" cols="50" rows="10" placeholder="Ваше сообщение" data-aos="fade-up" data-aos-delay="250"></textarea>
+				<textarea name="message" cols="50" rows="10" placeholder="Ваше сообщение" data-aos="fade-up" data-aos-delay="250"></textarea>
 				<button data-aos="fade-up" data-aos-delay="350">Отправить</button>
 				<div id="pd-bottom-lets-work"> </div>
 				<div id="scroll-down-btn" class="scroll-down-footer" data-aos="fade-left">
@@ -197,7 +229,7 @@
 			</div>
 			<div class="quick-link" data-aos="fade-left" data-aos-delay="150">
 				<h4 class="footer-block-name">Быстрые ссылки</h4>
-				<div id="links-footer" id="scroll-effect-js">
+				<div id="links-footer">
 					<a href="#ex1">Главная</a>
 					<a href="#ex1">О нас <i class="fas fa-chevron-down"></i></a>
 					<a href="#ex2">Новости</a>
