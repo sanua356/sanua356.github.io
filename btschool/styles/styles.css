@@ -51,7 +51,6 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
 }
 header nav{
 	display: flex;
@@ -110,6 +109,9 @@ header nav ul li{
 	header nav ul li{
 		display: block;
 	}
+}
+.header{
+	height: 100vh;
 }
 .submenu{
 	position: absolute;
