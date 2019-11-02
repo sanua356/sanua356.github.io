@@ -70,18 +70,6 @@ $(document).ready(function() {
 	});
 });
 $(document).ready(function() {
-  	 $('.news-template-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  nextArrow: '#arrow-left',
-  prevArrow: '#arrow-right',
-  dots: true,
-	});
-});
-
-$(document).ready(function() {
   	AOS.init()
 	AOS.init({
 		disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
