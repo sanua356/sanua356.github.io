@@ -1066,6 +1066,7 @@ footer > p {
 }
 /*/////////////////////////////////////////////////news-template////////////////////////////*/
 .news-template{
+	padding: 20px;
 	max-width: 850px;
 	height: auto;
 	margin: 0 auto;
@@ -1085,4 +1086,27 @@ footer > p {
 }
 .news-description{
 	font-size: 18px;
+}
+/*//////////////////////////////////students__change-timetable/////////////////////////////////////*/
+.classes{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.separate-class{
+	padding: 15px;
+}
+.lesson{
+	color: #ffffff;
+	padding: 10px 0px;
 }
