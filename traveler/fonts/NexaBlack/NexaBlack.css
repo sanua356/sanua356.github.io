@@ -1,0 +1,9 @@
+@font-face {
+font-family: 'Nexa Black';
+src: url('NexaBlack.eot');
+src: url('NexaBlack.eot?#iefix') format('embedded-opentype'),
+url('NexaBlack.woff') format('woff'),
+url('NexaBlack.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}

@@ -1,0 +1,9 @@
+@font-face {
+font-family: 'Nexa Regular';
+src: url('NexaRegular.eot');
+src: url('NexaRegular.eot?#iefix') format('embedded-opentype'),
+url('NexaRegular.woff') format('woff'),
+url('NexaRegular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}

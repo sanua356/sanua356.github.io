@@ -1,0 +1,9 @@
+@font-face {
+font-family: 'Nexa Book';
+src: url('Nexa-Book.eot');
+src: url('Nexa-Book.eot?#iefix') format('embedded-opentype'),
+url('Nexa-Book.woff') format('woff'),
+url('Nexa-Book.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
