@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dart service manager</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/icofont.min.css" />
+    <link rel="stylesheet" href="libs/slickslider/slick/slick.min.js" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="libs/slickslider/slick/slick-theme.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="z-index PopupBg"></div>
+    <section>
+      <div class="main-screen-bg" id="ex1">
+        <div class="container">
+          <div class="main-screen">
+            <header>
+              <nav class="menu">
+                <div class="logo">
+                  <img src="img/main-screen/logo-img.png" alt="Логотип" />
+                  <div class="logo-desc">
+                    <span>Dart</span>
+                    <h5>service manager</h5>
+                  </div>
+                </div>
+                <ul>
+                  <a href="#ex1" class="menu-scroll-link">
+                    <li class="menu-item">Home</li>
+                  </a>
+                  <a href="#ex2" class="menu-scroll-link">
+                    <li class="menu-item">Service</li>
+                  </a>
+                  <a href="#ex3" class="menu-scroll-link">
+                    <li class="menu-item">Extension</li>
+                  </a>
+                  <a href="#ex4" class="menu-scroll-link">
+                    <li class="menu-item">Pricing</li>
+                  </a>
+                  <a href="#ex5" class="menu-scroll-link">
+                    <li class="menu-item">Help</li>
+                  </a>
+                </ul>
+                <div id="sign-up-btn">
+                  <div href="#" id="PopupSignUpOpen">Sign up</div>
+                </div>
+                <div
+                  class="popup-sign-up popup-window hide"
+                  id="PopupSignUpWindow"
+                >
+                  <form>
+                    <h3>SIGN UP</h3>
+                    <input type="text" placeholder="Your Email" />
+                    <input type="text" placeholder="Your Password" />
+                    <button>Login</button>
+                    <div class="close-btn" id="PopupSignUpBtnClose">
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </div>
+              </nav>
+            </header>
+            <div class="main-screen-main-part">
+              <div class="title-and-desc-main-screen">
+                <h1>Satisfied customers are our support</h1>
+                <p>
+                  Fortune day out married parties. Fat new smallness few supposing 
+                  suspicion two. Mirth learn it he given. An concluded sportsman 
+                  offending so provision mr education. Celebrated delightful an 
+                  especially increasing instrument am. 
+                </p>
+                <button
+                  type="button"
+                  class="title-and-desc-main-screen-buy-now-btn gray-btn PopupCallMeOpen"
+                  >Buy now</a
+                >
+                <button
+                  type="button"
+                  class="title-and-desc-main-screen-try-free-btn black-text PopupCallMeOpen"
+                  >Try for free</a
+                >
+              </div>
+              <div
+                class="popup-call-me popup-window hide"
+                id="PopupCallMeWindow"
+              >
+                <form>
+                  <h3>LEAVE A REQUEST AND WE WILL CALL YOU</h3>
+                  <input type="text" placeholder="Your Firstname" />
+                  <input type="text" placeholder="Your Phone Number" />
+                  <button>Call Me</button>
+                  <div class="close-btn" id="PopupCallMeBtnClose">
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+              <div class="main-screen-watch-video">
+                <img
+                  src="img/main-screen/watch-video-img.png"
+                  alt="Просмотреть видео"
+                />
+                <iframe src="https://www.youtube.com/embed/ODewXWJg2aA" class = "videoFrame hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="#">
+                  <div class="watch-video-btn black-text">
+                    <span class="watch-video-play-btn bg-black-text"
+                      ><i class="icofont-ui-play"></i
+                    ></span>
+                    <span class="black-text">Watch the video</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="benefits-bg" id="ex3">
+        <div class="container">
+          <div class="benefits">
+            <div class="benefits-title-and-desc width555">
+              <h3 class="black-text title-style">Easy & Useful</h3>
+              <h5 class="benefits-subtitle">Project Management Tool</h5>
+              <p class="benefits-desc description-style">
+                Celebrated delightful an especially increasing instrument am. An 
+                stairs as be lovers uneasy. Do play they miss give so up. 
+                Ecstatic elegance gay but disposed.
+              </p>
+            </div>
+            <div class="benefits-table">
+              <div class="benefit">
+                <i class="icofont-ui-note benefit-1"></i>
+                <h6 class="subtitle-style">Reliability</h6>
+                <p class="description-style">
+                  Their saved linen downs tears son add music. Girl quit if case 
+                  mr sing as no have. Steepest speaking up attended it as. 
+                </p>
+              </div>
+              <div class="benefit">
+                <i class="icofont-businessman benefit-2"></i>
+                <h6 class="subtitle-style">Honesty</h6>
+                <p class="description-style">
+                  He in sportsman household otherwise it perceived instantly. 
+                  Made neat an on be gave show snug tore. Estate was tended ten. 
+                </p>
+              </div>
+              <div class="benefit">
+                <i class="icofont-worker benefit-3"></i>
+                <h6 class="subtitle-style">Quality</h6>
+                <p class="description-style">
+                  Boy nearer seemed. Mirth learn it he given. In expression an 
+                  solicitude principles in do. Sitting hearted on it without me.
+                </p>
+              </div>
+            </div>
+            <div class="benefits-get-started-btn PopupCallMeOpen">
+              <button class="green-btn">Get started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="statistics">
+        <div class="statistic">
+          <i class="material-icons">business</i>
+          <p>12000+ Business</p>
+        </div>
+        <div class="statistic">
+          <i class="material-icons">file_download</i>
+          <p>60000+ Downloads</p>
+        </div>
+        <div class="statistic">
+          <i class="material-icons">person</i>
+          <p>60000+ Downloads</p>
+        </div>
+        <div class="statistic">
+          <i class="material-icons">file_download</i>
+          <p>40000+ sPro Users</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="services-bg" id="ex2">
+        <div class="container">
+          <div class="services">
+            <div class="services-text-block width555">
+              <h3 class="black-text">Services</h3>
+              <p>
+                Advantages entreaties mr he apartments do. Polite do object at 
+                passed it is. Indulgence contrasted sufficient to.   
+              </p>
+            </div>
+            <div class="services-table">
+              <div class="services-table-item">
+                <i class="material-icons  black-text">trending_up</i>
+                <span class="black-text">Statistics</span>
+                <i class="material-icons dropdown">arrow_drop_down</i>
+                <div class="services-open-item services-dropdown-items">
+                  <img
+                    src="img/services/services-table-item-img.jpg"
+                    alt="Картинка из вкладки сервисы"
+                  />
+                  <p class="description-style">
+                    Unpleasant in in insensible favourable. If as increasing 
+                    contrasted entreaties be. Made neat an on be gave show snug
+                     tore. undefined. At none neat. <br /><br />
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in.
+                  </p>
+                </div>
+              </div>
+              <div class="services-table-item black-text">
+                <i class="material-icons">mail</i>
+                <span>inbox</span>
+                <i class="material-icons dropdown">arrow_drop_down</i>
+                <div
+                  class="services-close-item services-open-item services-dropdown-items"
+                >
+                  <img
+                    src="img/services/services-table-item-img5.jpg"
+                    alt="Картинка из вкладки сервисы"
+                  />
+                  <p class="description-style">
+                    He in sportsman household otherwise it perceived instantly.
+                     Detract yet delight written farther his general. Fortune 
+                     day out married parties. Mirth learn. <br /><br />
+                     It he given. As mr started arrival subject by believe. 
+                     Advantages entreaties mr he apartments do. Way own uncommonly.
+                      travelling now acceptance bed compliment solicitude.
+                  </p>
+                </div>
+              </div>
+              <div class="services-table-item">
+                <i class="material-icons">group</i>
+                <span>team</span>
+                <i class="material-icons dropdown">arrow_drop_down</i>
+                <div
+                  class="services-close-item services-open-item services-dropdown-items"
+                >
+                  <img
+                    src="img/services/services-table-item-img2.jpg"
+                    alt="Картинка из вкладки сервисы"
+                  />
+                  <p class="description-style">
+                    If as increasing contrasted entreaties be. Painful so he an 
+                    comfort is manners. Pain son rose more park way that. Ecstatic
+                    elegance gay but disposed. <br /><br />
+                    To things so denied admire. Polite do object at passed it is.
+                    He felicity no an at packages answered opinions juvenile.
+                  </p>
+                </div>
+              </div>
+              <div class="services-table-item">
+                <i class="material-icons">settings</i>
+                <span>settings</span>
+                <i class="material-icons dropdown">arrow_drop_down</i>
+                <div
+                  class="services-close-item services-open-item services-dropdown-items"
+                >
+                  <img
+                    src="img/services/services-table-item-img3.jpg"
+                    alt="Картинка из вкладки сервисы"
+                  />
+                  <p class="description-style">
+                    Estate was tended ten boy nearer seemed. Happiness remainder
+                     joy but earnestly for off. Sitting hearted on it without me.
+                    He in sportsman household otherwise.<br /><br />
+                     It perceived instantly. Her too add narrow having wished.
+                      Girl quit if case mr sing as no have. Hard do me sigh 
+                      with west same lady. Way own uncommonly.
+                  </p>
+                </div>
+              </div>
+              <div class="services-table-item">
+                <i class="material-icons">rss_feed</i>
+                <span>feed</span>
+                <i class="material-icons dropdown">arrow_drop_down</i>
+                <div
+                  class="services-close-item services-open-item services-dropdown-items"
+                >
+                  <img
+                    src="img/services/services-table-item-img4.jpg"
+                    alt="Картинка из вкладки сервисы"
+                  />
+                  <p class="description-style">
+                    Her too add narrow having wished. Detract yet delight written
+                    farther his general. If in so bred at dare rose lose good.
+                    Dissimilar admiration so terminated no.<br /><br />
+                    In contrasted it. Equally he minutes my hastily. Small for
+                    ask shade water manor think men begin. Latter remark hunted
+                    enough vulgar say man.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="reviews-bg" id="ex4">
+        <div class="container">
+          <div class="reviews">
+            <div class="reviews-text-block">
+              <h3 class="title-style">
+                What our customers have to say about us.
+              </h3>
+              <p class="description-style">
+                Up hung mr we give rest half. Equally he minutes my hastily.
+                 We leaf to snug on no need. In expression an solicitude
+              </p>
+              <button href="#" class="reviews-get-started-btn gray-btn PopupCallMeOpen"
+                >Get started</button
+              >
+            </div>
+            <div class="reviews-humans-block">
+              <div href="#" class="reviews-slider-btns js-human-prev">
+                <i class="material-icons">keyboard_arrow_up</i>
+              </div>
+              <div class="human-review-slider">
+                <div class="human-review human-review1">
+                  <img src="img/reviews/reviews-human1.png" alt="Отзыв 1" />
+                  <div class="human-review-text-block">
+                    <h5 class="black-text">John Doe</h5>
+                    <p class="description-style width555">
+                      Latter remark hunted enough vulgar say man. We me rent
+                       been part what. Decisively advantages nor expression 
+                       unpleasing she led met. Advantages entreaties mr he 
+                       apartments do. Now summer who day looked our behind.
+                    </p>
+                  </div>
+                </div>
+                <div class="human-review human-review2">
+                  <img src="img/reviews/reviews-human2.png" alt="Отзыв 2" />
+                  <div class="human-review-text-block">
+                    <h5 class="black-text">Khalessi Mint</h5>
+                    <p class="description-style width555">
+                      To things so denied admire. In expression an solicitude
+                       principles in do. Small for ask shade water manor think
+                        men begin. Small for ask shade water manor think men 
+                        begin. Girl quit if case mr sing as no have.
+                    </p>
+                  </div>
+                </div>
+                <div class="human-review human-review1">
+                  <img src="img/reviews/reviews-human4.png" alt="Отзыв 3" />
+                  <div class="human-review-text-block">
+                    <h5 class="black-text">Elon Kolsiren</h5>
+                    <p class="description-style width555">
+                      Decisively advantages nor expression unpleasing she led
+                       met. Latter remark hunted enough vulgar say man. As so 
+                       seeing latter he should thirty whence. Mrs assured add
+                        private married removed believe did she.
+                    </p>
+                  </div>
+                </div>
+                <div class="human-review human-review2">
+                  <img src="img/reviews/reviews-human3.png" alt="Отзыв 4" />
+                  <div class="human-review-text-block">
+                    <h5 class="black-text">Janet Karelli</h5>
+                    <p class="description-style width555">
+                      Estate was tended ten boy nearer seemed. Equally he minutes
+                       my hastily. At principle perfectly by sweetness do. 
+                       Dissimilar admiration so terminated no in contrasted it.
+                        We me rent been part what. Hard do me sigh wi
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div href="#" class="reviews-slider-btns js-human-next">
+                <i class="material-icons">keyboard_arrow_down</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="our-team-bg">
+        <div class="container">
+          <div class="our-team width555">
+            <div class="our-team-text-block">
+              <h3 class="title-style">Our Team</h3>
+              <p class="description-style">
+                Sentiments two occasional affronting solicitude travelling
+                 and one contrasted. To sure calm much most long me mean.
+              </p>
+            </div>
+            <div class="our-team-humans-desc">
+              <div class="our-team-photos our-team-slider">
+                <img
+                  src="img/our-team/human1.png"
+                  alt="Человек"
+                  class="our-team-slide ourTeamHuman1"
+                />
+                <img
+                  src="img/our-team/human-main.png"
+                  class="our-team-slide ourTeamHuman2"
+                  alt="Человек"
+                />
+                <img
+                  src="img/our-team/human2.png"
+                  alt="Человек"
+                  class="our-team-slide ourTeamHuman3"
+                />
+                <img
+                  src="img/our-team/human3.png"
+                  class="our-team-slide ourTeamHuman4"
+                  alt="Человек"
+                />
+              </div>
+              <div class="targetJs">
+                <div class="our-team-human-desc hide turner">
+                  <h5>Sophie Turner</h5>
+                  <p class="description-style">
+                    Is inquiry no he several excited am. Estate
+                     was tended ten boy nearer seemed. Pain son 
+                     rose more park way that. Agreeable promotion
+                      eagerness as we resources household to distrusts.
+                       Uncommonly no it.
+                  </p>
+                </div>
+                <div class="our-team-human-desc hide sapkovski">
+                  <h5>Djordana Rowling</h5>
+                  <p class="description-style">
+                    He in sportsman household otherwise it perceived instantly. 
+                    Her too add narrow having wished. Do play they miss give 
+                    so up. Pain son rose more park way that. Draw fond rank 
+                    form nor the day eat.
+                  </p>
+                </div>
+                <div class="our-team-human-desc hide tesla">
+                  <h5>Nikola Tesla</h5>
+                  <p class="description-style">
+                    Made neat an on be gave show snug tore. Happiness remainder 
+                    joy but earnestly for off. Her too add narrow having wished.
+                     If in so bred at dare rose lose good. Latter remark hunted
+                      enough vulgar say man.
+                  </p>
+                </div>
+                <div class="our-team-human-desc hide alderson">
+                  <h5>Elliot Alderson</h5>
+                  <p class="description-style">
+                    He in sportsman household otherwise it perceived instantly. 
+                    At principle perfectly by sweetness do. Equally he minutes my 
+                    hastily. Hard do me sigh with west same lady. Is inquiry no
+                     he several excited am.
+                  </p>
+                </div>
+              </div>
+              <div class="social-icons-our-team social-icons">
+                <a href="https://twitter.com/google" target="_blank"
+                  ><i class="icofont-twitter"></i
+                ></a>
+                <a href="https://ru-ru.facebook.com/Google/" target="_blank"
+                  ><i class="icofont-facebook"></i
+                ></a>
+                <a href="https://ru.linkedin.com/company/google" target="_blank"
+                  ><i class="icofont-linkedin"></i
+                ></a>
+                <a href="https://vk.com/alexanderpankratov03" target="_blank"
+                  ><i class="icofont-basketball"></i
+                ></a>
+                <a
+                  href="https://www.behance.net/search/projects/?search=google"
+                  target="_blank"
+                  ><i class="icofont-behance"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="contact-us-bg" id="ex5">
+        <div class="container" id="ex6">
+          <div class="contact-us">
+            <div class="contact-us-text-block">
+              <h3 class="title-style black-text">Contact Us</h3>
+              <p class="description-style black-text">
+                Small for ask shade water manor think men begin. He 
+                in sportsman household otherwise it perceived instantly
+              </p>
+            </div>
+            <form class="contact-us-form">
+              <div class="inputs-contact-info">
+                <input
+                  type="text"
+                  placeholder="*First Name"
+                  class="not-empty"
+                  name="firstname"
+                  id="firstname-contact-us-form"
+                />
+                <input
+                  type="text"
+                  placeholder="*Last Name"
+                  class="not-empty"
+                  name="lastname"
+                  id="lastname-contact-us-form"
+                />
+                <input
+                  type="text"
+                  placeholder="*Email"
+                  class="not-empty"
+                  name="email"
+                  id="email-contact-us-form"
+                />
+                <input
+                  type="text"
+                  placeholder="*Phone"
+                  class="not-empty"
+                  name="phone"
+                  id="phone-contact-us-form"
+                />
+              </div>
+              <textarea
+                placeholder="*Message"
+                class="not-empty"
+                name="message"
+                id="message-contact-us-form"
+              ></textarea>
+              <div class="send-message-options">
+                <a class="subscribe-news">
+                  <i class="material-icons">check_box_outline_blank</i>
+                  <span>subscribe to the newsletter</span>
+                </a>
+                <button
+                  class="green-btn send-message-btn"
+                  id="send-form"
+                  onClick="return Formdata(this.form)"
+                  name="Submit"
+                  type="button"
+                >
+                  send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-bg bg-black-text">
+        <div class="container">
+          <footer class="footer">
+            <div class="footer-left-part">
+              <div class="logo">
+                <img src="img/main-screen/logo-img.png" alt="Логотип" />
+                <div class="logo-desc">
+                  <span>Dart</span>
+                  <h5>service manager</h5>
+                </div>
+              </div>
+              <div class="privacy-policy">
+                <span>Privecy Policy</span>
+                <div></div>
+                <span>About Us</span>
+                <div></div>
+                <span>About Us</span>
+              </div>
+            </div>
+            <div class="footer-right-part">
+              <div class="menu">
+                <ul>
+                  <a href="#">
+                    <li class="menu-item" class="menu-scroll-link">Home</li>
+                  </a>
+                  <a href="#">
+                    <li class="menu-item" class="menu-scroll-link">Service</li>
+                  </a>
+                  <a href="#">
+                    <li class="menu-item" class="menu-scroll-link">
+                      Extension
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li class="menu-item" class="menu-scroll-link">Pricing</li>
+                  </a>
+                  <a href="#">
+                    <li class="menu-item" class="menu-scroll-link">Help</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="social-icons-footer social-icons">
+                <a href="https://twitter.com/google" target="_blank"
+                  ><i class="icofont-twitter"></i
+                ></a>
+                <a href="https://ru-ru.facebook.com/Google/" target="_blank"
+                  ><i class="icofont-facebook"></i
+                ></a>
+                <a href="https://ru.linkedin.com/company/google" target="_blank"
+                  ><i class="icofont-linkedin"></i
+                ></a>
+                <a href="https://vk.com/alexanderpankratov03" target="_blank"
+                  ><i class="icofont-basketball"></i
+                ></a>
+                <a
+                  href="https://www.behance.net/search/projects/?search=google"
+                  target="_blank"
+                  ><i class="icofont-behance"></i
+                ></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/slickslider/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
