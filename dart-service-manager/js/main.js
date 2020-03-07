@@ -45,7 +45,7 @@ var popupCallMeBtnOpen = document.getElementsByClassName("PopupCallMeOpen");
 popupCallMeBtnClose = document.getElementById("PopupCallMeBtnClose");
 popupCallMeWindow = document.getElementById("PopupCallMeWindow");
 popupCallMeScreenBg = document.getElementsByClassName("PopupBg");
-console.log(popupCallMeBtnOpen);
+
 popupCallMeBtnOpen[0].addEventListener("click", openPopupCallMe);
 popupCallMeBtnOpen[1].addEventListener("click", openPopupCallMe);
 popupCallMeBtnOpen[2].addEventListener("click", openPopupCallMe);
@@ -70,7 +70,16 @@ $(document).ready(function() {
     verticalSwiping: true,
     autoplay: true,
     prevArrow: $(".js-human-prev"),
-    nextArrow: $(".js-human-next")
+    nextArrow: $(".js-human-next"),
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          verticalSwiping: false,
+          swipe: false
+        }
+      }
+    ]
   });
 });
 // human-review slider - end
@@ -236,7 +245,11 @@ function Formdata(data) {
     redirectArrayContactUs[3] == "true" &&
     redirectArrayContactUs[4] == "true"
   ) {
-    window.location.href = "thank-you.html";
+    let thankYouPopup = document.getElementById("thankYouPopup");
+    thankYouPopup.classList.remove("hide");
+    thankYouPopup.classList.add("opct-animate");
+    setTimeout(() => thankYouPopup.classList.add("hide"), 3000);
+    //window.location.href = "thank-you.html";
   } else {
     console.log("form is not all valid");
   }
