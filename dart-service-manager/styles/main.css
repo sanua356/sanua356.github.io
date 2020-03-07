@@ -25,11 +25,21 @@ p {
   width: 1440px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
 .main-screen-bg {
   background-image: url(../img/main-screen/main-screen-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+@media screen and (max-width: 480px) {
+  .main-screen-bg {
+    height: auto;
+  }
 }
 /*menu*/
 
@@ -38,6 +48,11 @@ header {
   padding-top: 50px;
   padding-bottom: 0;
   margin-bottom: 170px;
+}
+@media screen and (max-width: 480px) {
+  header {
+    margin-bottom: 100px;
+  }
 }
 .logo {
   display: -moz-flex;
@@ -75,6 +90,11 @@ header {
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+  }
+}
 .menu ul {
   max-width: 440px;
   display: -moz-flex;
@@ -82,6 +102,12 @@ header {
   display: -o-flex;
   display: -webkit-box;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .menu li {
   list-style-type: none;
@@ -120,7 +146,11 @@ header {
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
-
+@media screen and (max-width: 480px) {
+  .main-screen-main-part {
+    flex-direction: column;
+  }
+}
 /*title-and-desc-main-screen*/
 
 .title-and-desc-main-screen {
@@ -132,12 +162,26 @@ header {
   line-height: 65px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .title-and-desc-main-screen h1 {
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+  }
+}
 .title-and-desc-main-screen p {
   margin-top: 30px;
   margin-bottom: 40px;
   padding: 0;
   font-size: 18px;
   line-height: 35px;
+}
+@media screen and (max-width: 480px) {
+  .title-and-desc-main-screen p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 .title-and-desc-main-screen-try-free-btn {
   transition: 0.2s ease;
@@ -150,6 +194,16 @@ header {
   border-radius: 5px;
   border: none;
   background-color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  .title-and-desc-main-screen-try-free-btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title-and-desc-main-screen-buy-now-btn {
+    margin-left: 1vh;
+  }
 }
 .title-and-desc-main-screen-try-free-btn:hover {
   transition: 0.2s ease;
@@ -177,6 +231,19 @@ header {
   max-width: 600px;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 480px) {
+  .main-screen-watch-video {
+    margin-top: 50px;
+    max-width: 90%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-screen-watch-video img {
+    max-width: 100%;
+    height: 300px;
+  }
 }
 .main-screen-watch-video iframe {
   width: 105%;
@@ -264,6 +331,11 @@ header {
   justify-content: space-between;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .benefits-table {
+    flex-direction: column;
+  }
+}
 .benefit {
   max-width: 345px;
 }
@@ -332,6 +404,11 @@ header {
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .statistics {
+    flex-direction: column;
+  }
+}
 .statistic {
   display: -moz-flex;
   display: -ms-flex;
@@ -345,6 +422,11 @@ header {
   align-items: center;
   -webkit-box-flex: 1;
   flex: 1;
+}
+@media screen and (max-width: 480px) {
+  .statistic {
+    width: 100%;
+  }
 }
 .statistic p {
   max-width: 110px;
@@ -413,6 +495,17 @@ header {
   border-radius: 5px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 480px) {
+  .services-open-item {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-open-item p {
+    padding-top: 20px;
+  }
+}
 .services-table-item i {
   color: #061e37;
   font-size: 20px;
@@ -469,8 +562,22 @@ header {
   -webkit-box-align: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .reviews-text-block {
   max-width: 515px;
+}
+@media screen and (max-width: 480px) {
+  .reviews-text-block {
+    text-align: center;
+    padding-top: 50px;
+  }
 }
 .reviews-text-block p {
   padding-top: 20px;
@@ -488,6 +595,16 @@ header {
   align-items: center;
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .human-review {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .human-review img {
+    display: none;
+  }
+}
 .human-review1 {
   margin-top: -20px;
   margin-bottom: 30px;
@@ -504,6 +621,11 @@ header {
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 480px) {
+  .human-review-text-block {
+    padding-right: 30px;
+  }
 }
 .human-review img {
   padding-right: 50px;
@@ -618,6 +740,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 480px) {
+  .inputs-contact-info {
+    justify-content: center;
+  }
+}
 .contact-us-form input {
   width: 280px;
   height: 50px;
@@ -671,6 +798,11 @@ header {
   background-color: #fafafa;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+  .contact-us-form textarea {
+    width: 90%;
+  }
 }
 .contact-us-form textarea::-webkit-input-placeholder {
   color: #061e37;
@@ -740,7 +872,34 @@ header {
 .send-message-btn {
   padding: 20px 40px;
 }
-
+#thankYouPopup {
+  position: fixed;
+  z-index: 999999999999999999;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 550px;
+  max-height: 400px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+  padding-top: 100px;
+}
+#thankYouPopup span {
+  color: #ffffff;
+  background-color: rgb(0, 256, 0);
+  font-size: 80px;
+  padding: 30px 40px;
+  border-radius: 40px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+#thankYouPopup h3 {
+  margin-top: 80px;
+  color: #000000;
+  font-size: 35px;
+}
 /* contact-us- end*/
 
 /* footer*/
@@ -759,6 +918,17 @@ header {
   -ms-align-items: center;
   -webkit-box-align: center;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .logo {
+    justify-content: center;
+  }
 }
 .privacy-policy {
   display: -moz-flex;
