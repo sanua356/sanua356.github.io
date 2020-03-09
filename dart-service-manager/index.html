@@ -19,6 +19,7 @@
       type="text/css"
       href="libs/slickslider/slick/slick-theme.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -31,14 +32,14 @@
           <div class="main-screen">
             <header>
               <nav class="menu">
-                <div class="logo">
+                <div class="logo" data-aos="fade-left">
                   <img src="img/main-screen/logo-img.png" alt="Логотип" />
                   <div class="logo-desc">
                     <span>Dart</span>
                     <h5>service manager</h5>
                   </div>
                 </div>
-                <ul>
+                <ul data-aos="fade-down">
                   <a href="#ex1" class="menu-scroll-link">
                     <li class="menu-item">Home</li>
                   </a>
@@ -55,7 +56,7 @@
                     <li class="menu-item">Help</li>
                   </a>
                 </ul>
-                <div id="sign-up-btn">
+                <div id="sign-up-btn" data-aos="fade-right">
                   <div href="#" id="PopupSignUpOpen">Sign up</div>
                 </div>
                 <div
@@ -75,7 +76,7 @@
               </nav>
             </header>
             <div class="main-screen-main-part">
-              <div class="title-and-desc-main-screen">
+              <div class="title-and-desc-main-screen" data-aos="fade-left">
                 <h1>Satisfied customers are our support</h1>
                 <p>
                   Fortune day out married parties. Fat new smallness few supposing 
@@ -102,13 +103,13 @@
                   <h3>LEAVE A REQUEST AND WE WILL CALL YOU</h3>
                   <input type="text" placeholder="Your Firstname" />
                   <input type="text" placeholder="Your Phone Number" />
-                  <button type="button">Call Me</button>
+                  <button type="button" id="CallMeBtn">Call Me</button>
                   <div class="close-btn" id="PopupCallMeBtnClose">
                     <i class="material-icons">close</i>
                   </div>
                 </form>
               </div>
-              <div class="main-screen-watch-video">
+              <div class="main-screen-watch-video" data-aos="fade-left">
                 <img
                   src="img/main-screen/watch-video-img.png"
                   alt="Просмотреть видео"
@@ -133,16 +134,16 @@
         <div class="container">
           <div class="benefits">
             <div class="benefits-title-and-desc width555">
-              <h3 class="black-text title-style">Easy & Useful</h3>
-              <h5 class="benefits-subtitle">Project Management Tool</h5>
-              <p class="benefits-desc description-style">
+              <h3 class="black-text title-style" data-aos="fade-up">Easy & Useful</h3>
+              <h5 class="benefits-subtitle" data-aos="fade-up">Project Management Tool</h5>
+              <p class="benefits-desc description-style" data-aos="fade-up">
                 Celebrated delightful an especially increasing instrument am. An 
                 stairs as be lovers uneasy. Do play they miss give so up. 
                 Ecstatic elegance gay but disposed.
               </p>
             </div>
             <div class="benefits-table">
-              <div class="benefit">
+              <div class="benefit" data-aos="fade-left">
                 <i class="icofont-ui-note benefit-1"></i>
                 <h6 class="subtitle-style">Reliability</h6>
                 <p class="description-style">
@@ -150,7 +151,7 @@
                   mr sing as no have. Steepest speaking up attended it as. 
                 </p>
               </div>
-              <div class="benefit">
+              <div class="benefit" data-aos="fade-down">
                 <i class="icofont-businessman benefit-2"></i>
                 <h6 class="subtitle-style">Honesty</h6>
                 <p class="description-style">
@@ -158,7 +159,7 @@
                   Made neat an on be gave show snug tore. Estate was tended ten. 
                 </p>
               </div>
-              <div class="benefit">
+              <div class="benefit" data-aos="fade-right">
                 <i class="icofont-worker benefit-3"></i>
                 <h6 class="subtitle-style">Quality</h6>
                 <p class="description-style">
@@ -167,26 +168,26 @@
                 </p>
               </div>
             </div>
-            <div class="benefits-get-started-btn PopupCallMeOpen">
+            <div class="benefits-get-started-btn PopupCallMeOpen" data-aos="fade-up">
               <button class="green-btn">Get started</button>
             </div>
           </div>
         </div>
       </div>
       <div class="statistics">
-        <div class="statistic">
+        <div class="statistic" data-aos="fade-up">
           <i class="material-icons">business</i>
           <p>12000+ Business</p>
         </div>
-        <div class="statistic">
+        <div class="statistic" data-aos="fade-down">
           <i class="material-icons">file_download</i>
           <p>60000+ Downloads</p>
         </div>
-        <div class="statistic">
+        <div class="statistic" data-aos="fade-up">
           <i class="material-icons">person</i>
           <p>60000+ Downloads</p>
         </div>
-        <div class="statistic">
+        <div class="statistic" data-aos="fade-down">
           <i class="material-icons">file_download</i>
           <p>40000+ sPro Users</p>
         </div>
@@ -197,14 +198,14 @@
         <div class="container">
           <div class="services">
             <div class="services-text-block width555">
-              <h3 class="black-text">Services</h3>
-              <p>
+              <h3 class="black-text" data-aos="fade-up">Services</h3>
+              <p data-aos="fade-up">
                 Advantages entreaties mr he apartments do. Polite do object at 
                 passed it is. Indulgence contrasted sufficient to.   
               </p>
             </div>
             <div class="services-table">
-              <div class="services-table-item">
+              <div class="services-table-item" data-aos="fade-up">
                 <i class="material-icons  black-text">trending_up</i>
                 <span class="black-text">Statistics</span>
                 <i class="material-icons dropdown">arrow_drop_down</i>
@@ -223,7 +224,7 @@
                   </p>
                 </div>
               </div>
-              <div class="services-table-item black-text">
+              <div class="services-table-item black-text" data-aos="fade-up">
                 <i class="material-icons">mail</i>
                 <span>inbox</span>
                 <i class="material-icons dropdown">arrow_drop_down</i>
@@ -244,7 +245,7 @@
                   </p>
                 </div>
               </div>
-              <div class="services-table-item">
+              <div class="services-table-item" data-aos="fade-up">
                 <i class="material-icons">group</i>
                 <span>team</span>
                 <i class="material-icons dropdown">arrow_drop_down</i>
@@ -264,7 +265,7 @@
                   </p>
                 </div>
               </div>
-              <div class="services-table-item">
+              <div class="services-table-item" data-aos="fade-up">
                 <i class="material-icons">settings</i>
                 <span>settings</span>
                 <i class="material-icons dropdown">arrow_drop_down</i>
@@ -285,7 +286,7 @@
                   </p>
                 </div>
               </div>
-              <div class="services-table-item">
+              <div class="services-table-item" data-aos="fade-up">
                 <i class="material-icons">rss_feed</i>
                 <span>feed</span>
                 <i class="material-icons dropdown">arrow_drop_down</i>
@@ -315,7 +316,7 @@
       <div class="reviews-bg" id="ex4">
         <div class="container">
           <div class="reviews">
-            <div class="reviews-text-block">
+            <div class="reviews-text-block" data-aos="fade-left">
               <h3 class="title-style">
                 What our customers have to say about us.
               </h3>
@@ -331,7 +332,7 @@
               <div href="#" class="reviews-slider-btns js-human-prev">
                 <i class="material-icons">keyboard_arrow_up</i>
               </div>
-              <div class="human-review-slider">
+              <div class="human-review-slider" data-aos="fade-right">
                 <div class="human-review human-review1">
                   <img src="img/reviews/reviews-human1.png" alt="Отзыв 1" />
                   <div class="human-review-text-block">
@@ -489,7 +490,7 @@
     <section>
       <div class="contact-us-bg" id="ex5">
         <div class="container" id="ex6">
-          <div class="contact-us">
+          <div class="contact-us" data-aos="fade-up">
             <div class="contact-us-text-block">
               <h3 class="title-style black-text">Contact Us</h3>
               <p class="description-style black-text">
@@ -626,6 +627,7 @@
     </section>
     <script src="libs/jquery-3.4.1.min.js"></script>
     <script src="libs/slickslider/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
