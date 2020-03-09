@@ -43,6 +43,7 @@ function closePopup() {
 
 var popupCallMeBtnOpen = document.getElementsByClassName("PopupCallMeOpen");
 popupCallMeBtnClose = document.getElementById("PopupCallMeBtnClose");
+popupCallMeSend = document.getElementById("CallMeBtn");
 popupCallMeWindow = document.getElementById("PopupCallMeWindow");
 popupCallMeScreenBg = document.getElementsByClassName("PopupBg");
 
@@ -51,7 +52,9 @@ popupCallMeBtnOpen[1].addEventListener("click", openPopupCallMe);
 popupCallMeBtnOpen[2].addEventListener("click", openPopupCallMe);
 popupCallMeBtnOpen[3].addEventListener("click", openPopupCallMe);
 popupCallMeBtnClose.addEventListener("click", closePopupCallMe);
-
+popupCallMeSend.addEventListener("click", function() {
+  window.location.href = "http://dart-service-manager.loc/thank-you.html";
+});
 function openPopupCallMe() {
   popupCallMeScreenBg[0].classList.remove("z-index");
   popupCallMeWindow.classList.remove("hide");
@@ -73,7 +76,7 @@ $(document).ready(function() {
     nextArrow: $(".js-human-next"),
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           verticalSwiping: false,
           swipe: false
@@ -152,7 +155,27 @@ $(document).ready(function() {
   }, 500);
 });
 // our-team slider - end
+//aos
+AOS.init();
+AOS.init({
+  disable: false,
+  startEvent: "DOMContentLoaded",
+  initClassName: "aos-init",
+  animatedClassName: "aos-animate",
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99,
 
+  offset: 120,
+  delay: 0,
+  duration: 600,
+  easing: "ease",
+  once: false,
+  mirror: false,
+  anchorPlacement: "top-bottom"
+});
+//aos-end
 //services-table
 var dropdownButtonsArray = document.getElementsByClassName(
   "services-table-item"
@@ -249,7 +272,6 @@ function Formdata(data) {
     thankYouPopup.classList.remove("hide");
     thankYouPopup.classList.add("opct-animate");
     setTimeout(() => thankYouPopup.classList.add("hide"), 3000);
-    //window.location.href = "thank-you.html";
   } else {
     console.log("form is not all valid");
   }
