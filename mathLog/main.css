@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Russo One", sans-serif;
+  text-shadow: 5px 1px 5px white;
+}
+body {
+  background: url(/src/depositphotos_19597197-stock-photo-mathematic-school-background-illustration.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.mainTitle {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+.hintsTitle {
+  margin-top: 30px;
+  text-shadow: 5px 1px 5px white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.TextAreaScreenTextBar {
+  text-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 35px;
+  padding: 20px;
+  white-space: pre-wrap;
+  height: auto;
+}
+.hints {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hint {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+.hint span {
+  font-size: 30px;
+  padding-right: 20px;
+  color: red;
+}
+.auxiliaryButtons {
+  margin-top: 70px;
+}
+.auxiliaryButtons h3 {
+  margin-bottom: 20px;
+}
+.capsLockEffect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  max-width: 170px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
+}
+.falseCapsLock {
+  color: red;
+  border: 1px solid red;
+}
+.falseCapsLock span {
+  color: red;
+  border: 1px solid red;
+}
+.trueCapsLock {
+  color: green;
+  border: 1px solid green;
+}
+.trueCapsLock span {
+  color: green;
+  border: 1px solid green;
+}
+.capsLockEffect span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 4px 10px;
+}
+.createrInfo * {
+  color: gray;
+}
+.createrInfo {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.createrInfo a {
+  margin-left: 15px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Рисовалка логических выражений</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="mainTitle">Рисовалка логических выражений</h1>
+        </div>
+    </header>
+    <section class="inputScreen">
+        <div class="container">
+            <div class="textAreaScreen">
+                <h2>Окно ввода выражений:</h2>
+                <textarea type="text" class="TextAreaScreenTextBar" id="textBarFormula"></textarea>
+            </div>
+        </div>
+    </section>
+    <section class="hintsScreen">
+        <div class="container">
+            <h2 class="hintsTitle">Снизу находятся кнопки вставки символов, </br>также поддерживается ввод через сочетания клавиш (shift + номер символа)</h2>
+            <div class="hints">
+                <div class="hint">
+                    <span>⇒</span>
+                    <div>Alt + 1</div>
+                </div>
+                <div class="hint">
+                    <span>⇔</span>
+                    <div>Alt + 2</div>
+                </div>
+                <div class="hint">
+                    <span>∧</span>
+                    <div>Alt + 3</div>
+                </div>
+                <div class="hint">
+                    <span>∨</span>
+                    <div>Alt + 4</div>
+                </div>
+                <div class="hint">
+                    <span>¬</span>
+                    <div>Alt + 5</div>
+                </div>
+                <div class="hint">
+                    <span>∀</span>
+                    <div>Alt + 6</div>
+                </div>
+                <div class="hint">
+                    <span>∃</span>
+                    <div>Alt + 7</div>
+                </div>
+                <div class="hint">
+                    <span>≡</span>
+                    <div>Alt + 8</div>
+                </div>
+                <div class="hint">
+                    <span>⊕</span>
+                    <div>Alt + 9</div>
+                </div>
+                <div class="hint">
+                    <span>←</span>
+                    <div>Alt + 0</div>
+                </div>
+            </div>
+            <div class="auxiliaryButtons">
+                <h3>Вспомогательные кнопки:</h3>
+                <div class="capsLockEffect falseCapsLock">
+                    <article> Эффект CapsLock</article>
+                    <span class="capsLockEffect__checkbox">X</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <span class="createrInfo">
+                Site created by<a href="https://vk.com/alexanderpankratov03" target="_blank">  Alexander Pankratov</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
