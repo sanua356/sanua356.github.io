@@ -67,11 +67,22 @@
                     <div>Alt + 0</div>
                 </div>
             </div>
+            <h3 class="auxiliaryButtonsTitle">Вспомогательные кнопки:</h3>
             <div class="auxiliaryButtons">
-                <h3>Вспомогательные кнопки:</h3>
-                <div class="capsLockEffect falseCapsLock">
+                <div class="capsLockEffect falseButton auxiliaryButton">
                     <article> Эффект CapsLock</article>
-                    <span class="capsLockEffect__checkbox">X</span>
+                    <span class="capsLockEffect__checkbox checkboxButton">X</span>
+                </div>
+                <div class="fontSizeRange auxiliaryButton">
+                    <article>Размер шрифта</article>
+                    <div class="fontSizeRangeValueSpan">
+                        <input type="range" min="15" max="70" value="35" id="fontSizeRange">
+                        <span id="fontSizeRangeValue">35</span>
+                    </div>
+                </div>
+                <div class="onlyEnglichWords falseButton auxiliaryButton">
+                    <article> Только английские буквы</article>
+                    <span class="OnlyEnglichWordsCheckbox checkboxButton">X</span>
                 </div>
             </div>
         </div>
