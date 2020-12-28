@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Russo One", sans-serif;
+  text-shadow: 5px 1px 5px white;
+}
+body {
+  background-image: url(src/123.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  br {
+    display: none;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .container {
+    width: 100%;
+  }
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.mainTitle {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .mainTitle {
+    font-size: 35px;
+  }
+}
+.hintsTitle {
+  margin-top: 30px;
+  text-shadow: 5px 1px 5px white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .hintsTitle {
+    font-size: 18px;
+  }
+}
+.textAreaScreen textarea {
+  height: 200px;
+}
+@media screen and (max-width: 1201px) {
+  .textAreaScreen textarea {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .textAreaScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textAreaScreen h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1201px) {
+  .textAreaScreen h2 {
+    margin-left: 1em;
+  }
+}
+.TextAreaScreenTextBar {
+  text-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 35px;
+  padding: 20px;
+  white-space: pre-wrap;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .TextAreaScreenTextBar {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1201px) {
+  .TextAreaScreenTextBar {
+    width: 90%;
+    margin-left: 0.5em;
+  }
+}
+.hints {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hint {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+.hint span {
+  font-size: 30px;
+  padding-right: 20px;
+  color: red;
+}
+.auxiliaryButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .auxiliaryButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1201px) {
+  .auxiliaryButtons {
+    margin-left: 0.5em;
+  }
+}
+.auxiliaryButton {
+  max-width: 170px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: white;
+}
+.auxiliaryButtonsTitle {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1px) and (max-width: 1201px) {
+  .auxiliaryButtonsTitle {
+    text-align: center;
+  }
+}
+.falseButton {
+  color: red;
+  border: 1px solid red;
+}
+.falseButton span {
+  color: red;
+  border: 1px solid red;
+}
+.trueButton {
+  color: green;
+  border: 1px solid green;
+}
+.trueButton span {
+  color: green;
+  border: 1px solid green;
+}
+.checkboxButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 4px 10px;
+}
+.createrInfo * {
+  color: gray;
+}
+.createrInfo {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.createrInfo a {
+  margin-left: 15px;
+}
+.fontSizeRange {
+  flex-direction: column;
+  text-align: center;
+}
+.fontSizeRangeValueSpan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fontSizeRangeValueSpan span {
+  margin-left: 20px;
+}
