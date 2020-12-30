@@ -54,7 +54,7 @@ body {
 }
 @media screen and (max-width: 1201px) {
   .textAreaScreen textarea {
-    height: auto;
+    min-height: 202px;
   }
 }
 @media screen and (max-width: 768px) {

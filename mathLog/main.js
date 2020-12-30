@@ -12,22 +12,19 @@ capsLockEffect.addEventListener("click", function(){
   if(this.classList.contains("trueButton")){
     capsLockEffectCheckbox.innerHTML = "V";
     capsLockEffectStatus = true;
+    textBarFormula.style.textTransform = "uppercase";
   }else{
     capsLockEffectCheckbox.innerHTML = "X";
     capsLockEffectStatus = false;
+    textBarFormula.style.textTransform = "lowercase";
   }
 });
 //Кнопка включения капсЛока в окне ввода выражений //
 
 //Добавление нового символа в поле ввода выражений через клик
-function setNewStringTextAreaNotCapsLock(symbol){
+function setNewStringTextArea(symbol){
   let textBarFormulaValue = textBarFormula.value;
   textBarFormula.classList.remove("uppercase");
-  textBarFormula.value = textBarFormulaValue + symbol;
-};
-function setNewStringTextAreaCapsLock(symbol){
-  let textBarFormulaValue = textBarFormula.value;
-  textBarFormula.classList.add("uppercase");
   textBarFormula.value = textBarFormulaValue + symbol;
 };
 
@@ -36,9 +33,9 @@ getAllSymbols.forEach((item) =>
   e.preventDefault();
   let symbol = item.children[0].textContent;
     if(capsLockEffectStatus){
-      setNewStringTextAreaCapsLock(symbol);
+      setNewStringTextArea(symbol);
     }else{
-      setNewStringTextAreaNotCapsLock(symbol);
+      setNewStringTextArea(symbol);
     }
     })
   );
@@ -53,9 +50,9 @@ document.onkeydown = function(e) {
       if (e.altKey && e.keyCode == i) {
         symbol = getAllSymbols[counter].children[0].textContent;
         if(capsLockEffectStatus){
-          setNewStringTextAreaCapsLock(symbol);
+          setNewStringTextArea(symbol);
         }else{
-          setNewStringTextAreaNotCapsLock(symbol);
+          setNewStringTextArea(symbol);
         }
       }
       counter++;
@@ -64,9 +61,9 @@ document.onkeydown = function(e) {
     if (e.altKey && e.keyCode == 48) {
       symbol = getAllSymbols[9].children[0].textContent;
       if(capsLockEffectStatus){
-        setNewStringTextAreaCapsLock(symbol);
+        setNewStringTextArea(symbol);
       }else{
-        setNewStringTextAreaNotCapsLock(symbol);
+        setNewStringTextArea(symbol);
       }
     }
   }
@@ -104,6 +101,7 @@ onlyEnglichWords.addEventListener("click", function(){
   if(onlyEnglichWordsStatus){
     checkOnlyEnglichWords();
   }else{
+    textBarFormula.oninput = null;
   }
 });
 function checkOnlyEnglichWords(){
