@@ -82,6 +82,20 @@ getValueFontSizeRange.oninput = function(){
 
 //Именение шрифта в поле ввода выражений через ползунок//
 
+//Именение межсимвольного интервала в поле ввода выражений через ползунок
+
+var getValueFontSizeRange = document.getElementById("letterSpacingRange");
+var outputGetValueFontSizeRange = document.getElementById("letterSpacingRangeValue");
+
+getValueFontSizeRange.oninput = function(){
+  outputGetValueFontSizeRange.innerHTML = getValueFontSizeRange.value;
+  editFontSize = outputGetValueFontSizeRange.textContent + "px";
+  textBarFormula.style.letterSpacing = editFontSize;
+};
+
+//Именение межсимвольного интервала в поле ввода выражений через ползунок//
+
+
 //Проверка на наличие русских букв
 var onlyEnglichWordsStatus = false;
 var onlyEnglichWords = document.querySelector(".onlyEnglichWords");
@@ -108,6 +122,9 @@ function checkOnlyEnglichWords(){
   textBarFormula.oninput = function(){
     var regexp = /[А-Я]/gi;
     var matches_array = textBarFormula.value.match(regexp);
+    if(matches_array == null){
+      matches_array = textBarFormula.value.match(/ё/g)
+    }
     if (matches_array != null) {
       alert("В поле ввода не должно быть русских символов.")
       textBarFormula.value = textBarFormula.value.slice(0, -1);

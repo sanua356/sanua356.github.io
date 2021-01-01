@@ -177,6 +177,13 @@ body {
   font-size: 25px;
   padding: 4px 10px;
 }
+.letterSpacingRange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .createrInfo * {
   color: gray;
 }

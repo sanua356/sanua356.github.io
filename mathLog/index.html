@@ -69,7 +69,7 @@
             </div>
             <h3 class="auxiliaryButtonsTitle">Вспомогательные кнопки:</h3>
             <div class="auxiliaryButtons">
-                <div class="capsLockEffect falseButton auxiliaryButton">
+                <div class="capsLockEffect falseButton auxiliaryButton buttonClickable">
                     <article> Эффект CapsLock</article>
                     <span class="capsLockEffect__checkbox checkboxButton">X</span>
                 </div>
@@ -80,7 +80,14 @@
                         <span id="fontSizeRangeValue">35</span>
                     </div>
                 </div>
-                <div class="onlyEnglichWords falseButton auxiliaryButton">
+                <div class="letterSpacingRange auxiliaryButton">
+                    <article>Интервал между буквами</article>
+                    <div class="letterSpacingRangeValueSpan">
+                        <input type="range" min="0" max="20" value="0" id="letterSpacingRange">
+                        <span id="letterSpacingRangeValue">0</span>
+                    </div>
+                </div>
+                <div class="onlyEnglichWords falseButton auxiliaryButton buttonClickable">
                     <article> Только английские буквы</article>
                     <span class="OnlyEnglichWordsCheckbox checkboxButton">X</span>
                 </div>
