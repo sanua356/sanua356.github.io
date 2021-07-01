@@ -960,6 +960,7 @@ input[type=range]::-ms-thumb {
 	text-align: center;
 }
 .contact-me-form input{
+	color: white;
 	display: block;
 	margin: 0 auto;
 	width: 90%;
