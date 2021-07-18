@@ -987,6 +987,9 @@ input[type=range]::-ms-thumb {
 	border-radius: 5px;
 	border: 5px solid #ffffff;
 	margin-bottom: 45px;
+	padding-left: 20px;
+    	color: white;
+    	padding-top: 15px;
 }
 @media screen and (max-width: 480px) {
 	.contact-me-form textarea{
