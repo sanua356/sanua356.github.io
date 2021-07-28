@@ -650,12 +650,14 @@ header nav ul li a:hover {
   z-index: 5;
   left: 15px;
   bottom: 10px;
+  cursor: pointer;
 }
 .reply-star-btn {
   position: absolute;
   z-index: 5;
   right: 15px;
   bottom: 10px;
+  cursor: pointer;
 }
 input[type="range"]::-webkit-slider-runnable-track {
   width: 10%;
@@ -712,7 +714,6 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* Тоже самое для IE */
 input[type="range"]::-ms-thumb {
   -webkit-appearance: none;
   height: 10px;
