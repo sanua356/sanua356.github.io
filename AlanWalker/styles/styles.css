@@ -991,6 +991,7 @@ input[type="range"]::-ms-thumb {
   text-align: center;
 }
 .contact-me-form input {
+  color: white;
   display: block;
   margin: 0 auto;
   width: 90%;
@@ -1008,6 +1009,10 @@ input[type="range"]::-ms-thumb {
   }
 }
 .contact-me-form textarea {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
   display: block;
   margin: 0 auto;
   width: 90%;
